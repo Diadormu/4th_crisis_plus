@@ -111,12 +111,19 @@ ring_world_1 = {
 				}
 			}
 		}
+
+		#阻止AI建造多个
+		modifier = {
+			factor = 0
+			has_country_flag = built_ring_world_site
+		}
 	}
 
 	on_build_start = {}
 	on_build_cancel = {}
 	on_build_complete = {
 		set_star_flag = ring_world_built
+		set_country_flag = built_ring_world_site
 	}
 }
 

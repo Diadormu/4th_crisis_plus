@@ -136,6 +136,12 @@ habitat_0 = {
 			exists = sector
 			sector = { has_sector_type = core_sector }
 		}
+
+		#阻止非虚空居者起源建造
+		modifier = {
+			factor = 0
+			NOT = { has_origin = origin_void_dwellers }
+		}
 	}
 
 	on_build_start = {}
