@@ -33,10 +33,10 @@ think_tank_0 = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_existing_megastructure"
-			has_no_non_gate_megastructure = yes
-		}
+#		custom_tooltip = {
+#			fail_text = "requires_no_existing_megastructure"
+#			has_no_non_gate_megastructure = yes
+#		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
@@ -88,10 +88,10 @@ think_tank_0 = {
 				fail_text = "requires_not_star"
 				is_star = no
 			}
-			custom_tooltip = {
-				fail_text = "requires_not_ring_world"
-				is_ringworld = no
-			}
+#			custom_tooltip = {
+#				fail_text = "requires_not_ring_world"
+#				is_ringworld = no
+#			}
 		} # use these for all non-star megastructures
 	}
 
