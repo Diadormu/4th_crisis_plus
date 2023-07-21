@@ -19,6 +19,7 @@ ring_world_1 = {
 		}
 	}
 
+	construction_blocks_and_blocked_by = none
 	prerequisites = { "tech_ring_world" }
 
 	possible = {

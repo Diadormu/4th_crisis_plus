@@ -21,6 +21,7 @@ spy_orb_0 = {
 		}
 	}
 
+	construction_blocks_and_blocked_by = none
 	prerequisites = { "tech_sentry_array" }
 
 	possible = {
