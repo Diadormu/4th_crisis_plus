@@ -1,0 +1,570 @@
+@base_moon_distance = 10
+
+lost_temple = {
+	name = "lost_temple"
+	class = sc_black_hole
+	flags = { empire_home_system ruined_ring_system crisis_sphere_ruined }
+	usage = custom_empire
+
+	asteroid_belt = {
+		type = crystal_asteroid_belt
+		radius = 55
+	}
+
+	planet = {
+		class = star
+		size = 30
+		orbit_distance = 0
+
+		init_effect = {
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 15
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 12
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 21
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 17
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 13
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 16
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 18
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				entity_offset_height = { min = -0 max = -20 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 12
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 25
+					angle = 70
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 100
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 55
+					angle = 125
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 37
+					angle = 100
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 41
+					angle = 80
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 30
+					angle = 127
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = 76
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 120
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 25
+					angle = 270
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 300
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 55
+					angle = 325
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 37
+					angle = 300
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 41
+					angle = 280
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 30
+					angle = 327
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = 276
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 40
+					angle = 320
+				}
+			}
+
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "large_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_01_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "medium_debris_02_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+			create_ambient_object = {
+				type = "small_debris_object"
+				entity_offset_height = { min = -0 max = -25 }
+				location = this
+			}
+			last_created_ambient_object = {
+				set_location = {
+					target = prev
+					distance = 45
+					angle = random
+				}
+			}
+		}
+	}
+
+	change_orbit = 35
+	init_effect = {
+		spawn_megastructure = { type = "crisis_sphere_ruined" }
+
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_01_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_02_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_01_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_02_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "small_debris_object"
+			location = solar_system
+		}
+	}
+
+	#45
+	change_orbit = 10
+	init_effect = {
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 0
+			orbit_distance = 10
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 90
+			orbit_distance = 10
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 180
+			orbit_distance = 10
+		}
+		spawn_megastructure = {
+			type = "ring_world_ruined"
+			orbit_angle = 270
+			orbit_distance = 10
+		}
+
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "large_debris_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_01_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_02_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_01_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "medium_debris_02_object"
+			location = solar_system
+		}
+		create_ambient_object = {
+			type = "small_debris_object"
+			location = solar_system
+		}
+	}
+
+	#65
+	change_orbit = 20
+	planet = {
+		class = pc_relic
+		orbit_distance = 0
+		orbit_angle = { min = 0 max = 360 }
+		size = 25
+		init_effect = {
+			clear_deposits = yes
+			save_global_event_target_as = mechanocalibrator_planet
+			add_deposit = d_shattered_solar_array
+			add_deposit = d_flooded_reactor_pits
+			add_deposit = d_ancient_reactor_pits
+			add_deposit = d_collapsed_spire
+			add_deposit = d_relic_metal_boneyard
+			add_deposit = d_relic_dense_ruins
+			spawn_megastructure = {
+				type = orbital_ring_ruined
+				planet = event_target:ruined_orbital_ring_planet
+				init_effect = {
+					create_ambient_object = {
+						type = "medium_debris_01_object"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_location = {
+							target = prev
+							distance = 8
+							angle = 90
+						}
+					}
+					create_ambient_object = {
+						type = "medium_debris_02_object"
+						location = this
+					}
+					last_created_ambient_object = {
+						set_location = {
+							target = prev
+							distance = 3
+							angle = 270
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#85
+	change_orbit = 20
+	planet = {
+		class = ideal_planet_class
+		home_planet = yes
+		orbit_distance = 0
+		orbit_angle = { min = 0 max = 360 }
+		size = 20
+		has_ring = yes
+		init_effect = {
+			generate_empire_home_planet = yes
+			prevent_anomaly = yes
+		}
+
+		change_orbit = @base_moon_distance
+		moon = {
+			count = 1
+			class = pc_nuked
+			orbit_distance = 0
+			orbit_angle = { min = 0 max = 360 }
+			size = 1
+		}
+	}
+}
