@@ -1,4 +1,5 @@
 @base_moon_distance = 10
+@entity_offset_height = -13
 
 lost_temple = {
 	name = "lost_temple"
@@ -8,13 +9,13 @@ lost_temple = {
 
 	asteroid_belt = {
 		type = crystal_asteroid_belt
-		radius = 55
+		radius = 60
 	}
 
 	planet = {
 		class = star
-		size = 30
-		orbit_distance = 0
+		size = 25
+		orbit_distance = -1
 
 		init_effect = {
 			create_ambient_object = {
@@ -115,6 +116,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "large_debris_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -126,6 +128,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "large_debris_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -137,6 +140,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "large_debris_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -148,6 +152,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "medium_debris_01_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -159,6 +164,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "medium_debris_02_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -170,6 +176,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "medium_debris_01_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -181,6 +188,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "medium_debris_02_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -192,6 +200,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "small_debris_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -203,6 +212,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "large_debris_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -214,6 +224,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "large_debris_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -225,6 +236,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "large_debris_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -236,6 +248,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "medium_debris_01_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -247,6 +260,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "medium_debris_02_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -258,6 +272,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "medium_debris_01_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -269,6 +284,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "medium_debris_02_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -280,6 +296,7 @@ lost_temple = {
 			}
 			create_ambient_object = {
 				type = "small_debris_object"
+				entity_offset_height = @entity_offset_height
 				location = this
 			}
 			last_created_ambient_object = {
@@ -298,7 +315,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -310,7 +327,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -322,7 +339,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -334,7 +351,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -346,7 +363,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -358,7 +375,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -370,7 +387,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -382,7 +399,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -394,7 +411,7 @@ lost_temple = {
 			last_created_ambient_object = {
 				set_location = {
 					target = prev
-					distance = 45
+					distance = 40
 					angle = random
 				}
 			}
@@ -437,30 +454,30 @@ lost_temple = {
 			type = "small_debris_object"
 			location = solar_system
 		}
-	}
+#	}
 
 	#45
-	change_orbit = 10
-	init_effect = {
+#	change_orbit = 10
+#	init_effect = {
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 0
-			orbit_distance = 10
+			orbit_distance = 40
 		}
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 90
-			orbit_distance = 10
+			orbit_distance = 40
 		}
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 180
-			orbit_distance = 10
+			orbit_distance = 40
 		}
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 270
-			orbit_distance = 10
+			orbit_distance = 40
 		}
 
 		create_ambient_object = {
@@ -495,49 +512,33 @@ lost_temple = {
 			type = "small_debris_object"
 			location = solar_system
 		}
-	}
 
-	#65
-	change_orbit = 20
-	planet = {
-		class = pc_relic
-		orbit_distance = 0
-		orbit_angle = { min = 0 max = 360 }
-		size = 25
-		init_effect = {
-			clear_deposits = yes
-			save_global_event_target_as = mechanocalibrator_planet
-			add_deposit = d_shattered_solar_array
-			add_deposit = d_flooded_reactor_pits
-			add_deposit = d_ancient_reactor_pits
-			add_deposit = d_collapsed_spire
-			add_deposit = d_relic_metal_boneyard
-			add_deposit = d_relic_dense_ruins
-			spawn_megastructure = {
-				type = orbital_ring_ruined
-				planet = event_target:ruined_orbital_ring_planet
-				init_effect = {
-					create_ambient_object = {
-						type = "medium_debris_01_object"
-						location = this
+		spawn_megastructure = {
+			type = orbital_ring_ruined
+			planet = event_target:ruined_orbital_ring_planet
+			init_effect = {
+				create_ambient_object = {
+					type = "medium_debris_01_object"
+					entity_offset_height = @entity_offset_height
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 8
+						angle = 90
 					}
-					last_created_ambient_object = {
-						set_location = {
-							target = prev
-							distance = 8
-							angle = 90
-						}
-					}
-					create_ambient_object = {
-						type = "medium_debris_02_object"
-						location = this
-					}
-					last_created_ambient_object = {
-						set_location = {
-							target = prev
-							distance = 3
-							angle = 270
-						}
+				}
+				create_ambient_object = {
+					type = "medium_debris_02_object"
+					entity_offset_height = @entity_offset_height
+					location = this
+				}
+				last_created_ambient_object = {
+					set_location = {
+						target = prev
+						distance = 3
+						angle = 270
 					}
 				}
 			}
@@ -545,12 +546,35 @@ lost_temple = {
 	}
 
 	#85
-	change_orbit = 20
+	change_orbit = 50
+	planet = {
+		class = pc_relic
+		orbit_distance = 0
+		orbit_angle = random
+		size = 25
+		has_ring = no
+		flags = { ruined_orbital_ring_planet }
+		init_effect = {
+			clear_deposits = yes
+			save_event_target_as = ruined_orbital_ring_planet
+			save_global_event_target_as = mechanocalibrator_planet
+			add_deposit = d_relic_dense_ruins
+			add_deposit = d_collapsed_spire
+			add_deposit = d_massive_crevice
+			add_deposit = d_shattered_solar_array
+			add_deposit = d_flooded_reactor_pits
+			add_deposit = d_crumbling_mining_tunnels
+			add_deposit = d_relic_metal_boneyard
+		}
+	}
+
+	#115
+	change_orbit = 30
 	planet = {
 		class = ideal_planet_class
 		home_planet = yes
 		orbit_distance = 0
-		orbit_angle = { min = 0 max = 360 }
+		orbit_angle = random
 		size = 20
 		has_ring = yes
 		init_effect = {
@@ -561,10 +585,18 @@ lost_temple = {
 		change_orbit = @base_moon_distance
 		moon = {
 			count = 1
-			class = pc_nuked
+			class = pc_machine_broken
 			orbit_distance = 0
-			orbit_angle = { min = 0 max = 360 }
-			size = 1
+			orbit_angle = random
+			size = 4
+			init_effect = {
+				add_deposit = d_energy_5
+				add_deposit = d_minerals_5
+				add_deposit = d_alloys_2
+				add_deposit = d_volatile_motes_1
+				add_deposit = d_exotic_gases_1
+				add_deposit = d_rare_crystals_1
+			}
 		}
 	}
 }
