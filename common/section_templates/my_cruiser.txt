@@ -7,7 +7,7 @@ ship_section_template = {
 	ship_size = cruiser
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "cruiser_bow_L1M1_entity"
+	entity = "cruiser_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { artillery artillery_stealth }
 
@@ -25,8 +25,8 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 
-	aux_utility_slots = 1
 	medium_utility_slots = 4
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -41,7 +41,7 @@ ship_section_template = {
 	ship_size = cruiser
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "cruiser_bow_G2S2_entity"
+	entity = "cruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
 
@@ -80,8 +80,8 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	aux_utility_slots = 1
 	medium_utility_slots = 4
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -96,7 +96,7 @@ ship_section_template = {
 	ship_size = cruiser
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "cruiser_bow_M3_entity"
+	entity = "cruiser_bow_M2_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { gunship carrier }
 
@@ -118,8 +118,8 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 
-	aux_utility_slots = 1
 	medium_utility_slots = 4
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -135,7 +135,7 @@ ship_section_template = {
 	ship_size = cruiser
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = "cruiser_mid_H2P2_entity"
+	entity = "cruiser_mid_S2HB_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { carrier }
 
@@ -176,8 +176,8 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	aux_utility_slots = 1
 	medium_utility_slots = 4
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -192,7 +192,7 @@ ship_section_template = {
 	ship_size = cruiser
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = "cruiser_mid_L2M1P1_entity"
+	entity = "cruiser_mid_L1M1_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery artillery_stealth }
 
@@ -221,8 +221,8 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 
-	aux_utility_slots = 1
 	medium_utility_slots = 4
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -237,7 +237,7 @@ ship_section_template = {
 	ship_size = cruiser
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = "cruiser_mid_M4P1_entity"
+	entity = "cruiser_mid_M3_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { gunship }
 
@@ -270,8 +270,8 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 
-	aux_utility_slots = 1
 	medium_utility_slots = 4
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -286,7 +286,7 @@ ship_section_template = {
 	ship_size = cruiser
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = "cruiser_mid_G3S2P1_entity"
+	entity = "cruiser_mid_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
 
@@ -336,8 +336,8 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 
-	aux_utility_slots = 1
 	medium_utility_slots = 4
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -350,11 +350,11 @@ ship_section_template = {
 #STERN
 
 ship_section_template = {
-	key = "CRUISER_STERN_M2"
+	key = "CRUISER_STERN_M2P1"
 	ship_size = cruiser
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "cruiser_stern_M2_entity"
+	entity = "cruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { artillery artillery_stealth carrier	}
 
@@ -371,8 +371,14 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 
-	aux_utility_slots = 2
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
 	medium_utility_slots = 4
+	aux_utility_slots = 2
 
 	resources = {
 		category = ship_sections
@@ -383,11 +389,11 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "CRUISER_STERN_S3"
+	key = "CRUISER_STERN_S3P1"
 	ship_size = cruiser
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "cruiser_stern_S3_entity"
+	entity = "cruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = {	gunship explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
 
@@ -409,8 +415,14 @@ ship_section_template = {
 		locatorname = "small_gun_03"
 	}
 
-	aux_utility_slots = 3
+	component_slot = {
+		name = "PD_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
 	medium_utility_slots = 4
+	aux_utility_slots = 3
 
 	resources = {
 		category = ship_sections

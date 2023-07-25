@@ -7,7 +7,7 @@ ship_section_template = {
 	ship_size = destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "destroyer_bow_M2S2_entity"
+	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { gunship brawler }
 
@@ -63,7 +63,7 @@ ship_section_template = {
 	ship_size = destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "destroyer_bow_S3P1_entity"
+	entity = "destroyer_bow_S3_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { screen }
 
@@ -121,7 +121,7 @@ ship_section_template = {
 	ship_size = destroyer
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "destroyer_bow_L1M1_entity"
+	entity = "destroyer_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { artillery artillery_stealth }
 
@@ -171,7 +171,7 @@ ship_section_template = {
 	ship_size = destroyer
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "destroyer_stern_P3_entity"
+	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { screen }
 
@@ -207,8 +207,8 @@ ship_section_template = {
 		locatorname = "small_gun_03"
 	}
 
-	aux_utility_slots = 1
 	small_utility_slots = 3
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -223,7 +223,7 @@ ship_section_template = {
 	ship_size = destroyer
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "destroyer_stern_S3_entity"
+	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { gunship brawler }
 
@@ -249,8 +249,8 @@ ship_section_template = {
 		locatorname = "small_gun_03"
 	}
 
-	aux_utility_slots = 2
 	small_utility_slots = 3
+	aux_utility_slots = 2
 
 	resources = {
 		category = ship_sections
@@ -265,7 +265,7 @@ ship_section_template = {
 	ship_size = destroyer
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "destroyer_stern_M2_entity"
+	entity = "destroyer_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { artillery artillery_stealth }
 
@@ -282,8 +282,8 @@ ship_section_template = {
 		locatorname = "medium_gun_02"
 	}
 
-	aux_utility_slots = 1
 	small_utility_slots = 3
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections

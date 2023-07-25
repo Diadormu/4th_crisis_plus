@@ -7,7 +7,7 @@ ship_section_template = {
 	ship_size = titan
 	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "titan_bow_T1L1P2_entity"
+	entity = "titan_bow_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { artillery gunship }
 
@@ -48,8 +48,8 @@ ship_section_template = {
 	}
 
 
-	aux_utility_slots = 1
 	large_utility_slots = 6
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -66,7 +66,7 @@ ship_section_template = {
 	ship_size = titan
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = "titan_mid_L6P3_entity"
+	entity = "titan_mid_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery gunship }
 
@@ -119,8 +119,8 @@ ship_section_template = {
 		locatorname = "small_gun_03"
 	}
 
-	aux_utility_slots = 1
 	large_utility_slots = 6
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -135,7 +135,7 @@ ship_section_template = {
 	ship_size = titan
 	fits_on_slot = mid
 	should_draw_components = yes
-	entity = "titan_mid_X2L2P3_entity"
+	entity = "titan_mid_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery gunship }
 
@@ -153,14 +153,14 @@ ship_section_template = {
 	}
 
 	component_slot = {
-		name = "LARGE_GUN_01"
+		name = "LARGE_GUN_03"
 		template = "large_turret"
-		locatorname = "large_gun_01"
+		locatorname = "large_gun_03"
 	}
 	component_slot = {
-		name = "LARGE_GUN_02"
+		name = "LARGE_GUN_04"
 		template = "large_turret"
-		locatorname = "large_gun_02"
+		locatorname = "large_gun_04"
 	}
 
 	component_slot = {
@@ -179,8 +179,8 @@ ship_section_template = {
 		locatorname = "small_gun_03"
 	}
 
-	aux_utility_slots = 1
 	large_utility_slots = 6
+	aux_utility_slots = 1
 
 	resources = {
 		category = ship_sections
@@ -197,7 +197,7 @@ ship_section_template = {
 	ship_size = titan
 	fits_on_slot = stern
 	should_draw_components = yes
-	entity = "titan_stern_L4P2_entity"
+	entity = "titan_stern_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { artillery gunship }
 
@@ -235,8 +235,8 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 
-	aux_utility_slots = 3
 	large_utility_slots = 3
+	aux_utility_slots = 3
 
 	resources = {
 		category = ship_sections
