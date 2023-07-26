@@ -6,6 +6,6 @@ tags={
 	"Galaxy Generation"
 	"Utilities"
 }
-name="My Stellaris set"
+name="The 4th Crisis limited reinforcement"
 supported_version="3.8.*"
 remote_file_id="3007983560"
