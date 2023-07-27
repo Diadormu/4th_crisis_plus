@@ -14,13 +14,13 @@
       unlock fortified new ship sections after finish all types Advanced Ship Hulls tech
 - [ ] 添加强化巨像和主宰的科技；  
       add fortified colossus and juggernaut tech
-- [x] 添加一个黑洞带碎环带遗迹球母星系
+- [x] 添加一个黑洞带碎环带遗迹球母星系  
       add a home system with Ruined Ring World and Relic Planet arround Black Hole
 
 已知问题：
 known issues:
-- 战列舰2X槽中段前两个炮台模型不显示；  
-  battleship's 2X slots mid section's first two models not show
+- 泰坦2X槽中段前两个炮台模型不显示；  
+  titan's 2X slots mid section's first two models not show
 - 主宰T槽没有生效；  
   juggernaut's T slot not in effect
 - 暂无本地化内容  
