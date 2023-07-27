@@ -7,6 +7,8 @@ ship_section_template = {
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { carrier artillery }
 
+	prerequisites = { tech_juggernaut_hull }
+
 	component_slot = {
 		name = "TITANIC_03"
 		template = "invisible_titanic_turret"

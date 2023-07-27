@@ -11,9 +11,9 @@
 	> 允许在黑洞，中子星或者脉冲星周围建造巨型船坞
       allow build Mega Shipyard above Black Hole、Neutron Star、Pulsar
 - [x] 每种舰船研究先进船体科技后将解锁新的强化船体；  
-      unlock fortified new ship sections after finish all types Advanced Ship Hulls tech
-- [ ] 添加强化巨像和主宰的科技；  
-      add fortified colossus and juggernaut tech
+      unlock fortified new ship sections after finished all types Advanced Ship Hulls tech
+- [x] 添加强化巨像和主宰的科技，完成后将解锁强化船体；  
+      add fortified colossus and juggernaut tech, after finished will unlock fortified new ship sections
 - [x] 添加一个黑洞带碎环带遗迹球母星系  
       add a home system with Ruined Ring World and Relic Planet arround Black Hole
 

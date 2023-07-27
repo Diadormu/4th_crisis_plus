@@ -6,6 +6,8 @@ ship_section_template = {
 	entity = "colossus_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 
+	prerequisites = { tech_colossus_hull }
+
 	component_slot = {
 		name = "PLANET_KILLER_GUN_01"
 		template = "invisible_planet_killer_fixed"
