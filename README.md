@@ -17,14 +17,9 @@
   add fortified colossus and juggernaut tech, after finished will unlock fortified new ship sections
 - 添加一个黑洞带碎环带遗迹球母星系  
   add a home system with Ruined Ring World and Relic Planet arround Black Hole
-- 中文本地化  
-  English Localization
+- 支持中文  
+  English Supported
 
-已知问题：
-known issues:
-- 泰坦2X槽中段前两个炮台模型不显示；  
-  titan's 2X slots mid section's first two models not show
-- 主宰T槽没有生效；  
-  juggernaut's T slot not in effect
+
 
 [⭐Github🌟](https://github.com/Diadormu/4th_crisis_plus)

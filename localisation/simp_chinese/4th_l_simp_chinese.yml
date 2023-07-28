@@ -2,7 +2,8 @@
   lost_temple_NAME: "失落圣殿"
   lost_temple_DESC: "昔人已乘黄鹤去，此地空余黄鹤楼。\n黄鹤一去不复返，白云千载空悠悠。\n晴川历历汉阳树，芳草萋萋鹦鹉洲。"
 
-  CORE_JUGGERNAUT_SECTION_T1X2H8M6P4: "先进主宰"
+  CORE_JUGGERNAUT_SECTION_T1X2H8M6P4: "先进航母主宰"
+  CORE_JUGGERNAUT_SECTION_T1X2L8M6P4: "先进巨炮主宰"
 
   TITAN_BOW_T1L1P2: "先进泰坦舰艏"
   TITAN_MID_L6P3: "先进泰坦核心"
@@ -44,13 +45,13 @@
   SHIP_COLOSSUS_SECTION_W1X1M2P4: "先进巨像区段"
 
   tech_juggernaut_hull: "先进主宰船体"
-#  tech_juggernaut_hull_desc: ""
-  TECH_UNLOCK_JUGGERNAUT_SECTION_TITLE: "§H解锁先进主宰船体§!"
-#  TECH_UNLOCK_JUGGERNAUT_SECTION_DESC: ""
+  tech_juggernaut_hull_desc: ""
+  TECH_UNLOCK_JUGGERNAUT_SECTION_TITLE: "§H解锁：§!先进主宰船体"
+  TECH_UNLOCK_JUGGERNAUT_SECTION_DESC: ""
   tech_colossus_hull: "先进巨像船体"
-#  tech_colossus_hull_desc: ""
-  TECH_UNLOCK_COLOSSUS_SECTION_TITLE: "§H解锁先进巨像船体§!"
-#  TECH_UNLOCK_COLOSSUS_SECTION_DESC: ""
+  tech_colossus_hull_desc: ""
+  TECH_UNLOCK_COLOSSUS_SECTION_TITLE: "§H解锁：§!先进巨像船体"
+  TECH_UNLOCK_COLOSSUS_SECTION_DESC: ""
 
   PERDITION_BEAM_JUGGERNAUT: "$PERDITION_BEAM$"
   PERDITION_BEAM_JUGGERNAUT_DESC: "$PERDITION_BEAM_DESC$"

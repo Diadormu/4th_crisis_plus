@@ -1,8 +1,9 @@
 ﻿l_english:
   lost_temple_NAME: "Lost Temple"
-  lost_temple_DESC: ""
+  lost_temple_DESC: "Immortal in the past flew away on yellow crane’s back.\nNow only an empty Yellow Crane Tower is left behind.\nThe yellow crane, once went away, has not come back.\nFor a thousand years, clouds drift around without a care.\nOn sunny day, trees at Hanyang plain are clearly visible.\nAromatic grass is grown luxuriantly all over Parrot Isle. "
 
-  CORE_JUGGERNAUT_SECTION_T1X2H8M6P4: "Advanced Juggernaut"
+  CORE_JUGGERNAUT_SECTION_T1X2H8M6P4: "Advanced Carrier Juggernaut"
+  CORE_JUGGERNAUT_SECTION_T1X2L8M6P4: "Advanced Artillery Juggernaut"
 
   TITAN_BOW_T1L1P2: "Advanced Titan Bow"
   TITAN_MID_L6P3: "Advanced Titan Core"
@@ -44,13 +45,13 @@
   SHIP_COLOSSUS_SECTION_W1X1M2P4: "Advanced Colossus"
 
   tech_juggernaut_hull: "Advanced Juggernaut Hulls"
-#  tech_juggernaut_hull_desc: ""
-  TECH_UNLOCK_JUGGERNAUT_SECTION_TITLE: "§HUnlocks Advanced Juggernaut Ship Section§!"
-#  TECH_UNLOCK_JUGGERNAUT_SECTION_DESC: ""
+  tech_juggernaut_hull_desc: ""
+  TECH_UNLOCK_JUGGERNAUT_SECTION_TITLE: "§HUnlocks:§! Advanced Juggernaut Ship Section"
+  TECH_UNLOCK_JUGGERNAUT_SECTION_DESC: ""
   tech_colossus_hull: "Advanced Colossus Hulls"
-#  tech_colossus_hull_desc: ""
-  TECH_UNLOCK_COLOSSUS_SECTION_TITLE: "§HUnlocks Advanced Colossus Ship Section§!"
-#  TECH_UNLOCK_COLOSSUS_SECTION_DESC: ""
+  tech_colossus_hull_desc: ""
+  TECH_UNLOCK_COLOSSUS_SECTION_TITLE: "§HUnlocks:§! Advanced Colossus Ship Section"
+  TECH_UNLOCK_COLOSSUS_SECTION_DESC: ""
 
   PERDITION_BEAM_JUGGERNAUT: "$PERDITION_BEAM$"
   PERDITION_BEAM_JUGGERNAUT_DESC: "$PERDITION_BEAM_DESC$"

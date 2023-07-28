@@ -144,12 +144,12 @@ ship_section_template = {
 	component_slot = {
 		name = "EXTRA_LARGE_01"
 		template = "extra_large_turret"
-		locatorname = "xl_gun_01"
+		locatorname = "large_gun_01"
 	}
 	component_slot = {
 		name = "EXTRA_LARGE_02"
 		template = "extra_large_turret"
-		locatorname = "xl_gun_02"
+		locatorname = "large_gun_02"
 	}
 
 	component_slot = {
