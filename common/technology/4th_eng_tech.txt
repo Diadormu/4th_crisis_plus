@@ -7,15 +7,11 @@ tech_juggernaut_hull = {
 	prerequisites = { "tech_juggernaut" }
 	weight = @tier5weight2
 
-	modifier = {
-		shipsize_juggernaut_hull_mult = 0.1
-	}
-
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
 		ship = {
-			title = "TECH_UNLOCK_JUGGERNAUT_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_JUGGERNAUT_CONSTRUCTION_DESC"
+			title = "TECH_UNLOCK_JUGGERNAUT_SECTION_TITLE"
+			desc = "TECH_UNLOCK_JUGGERNAUT_SECTION_DESC"
 		}
 	}
 
@@ -61,15 +57,11 @@ tech_colossus_hull = {
 	prerequisites = { "tech_colossus" }
 	weight = @tier5weight2
 
-	modifier = {
-		shipsize_colossus_hull_mult = 0.1
-	}
-
 	prereqfor_desc = {
 		hide_prereq_for_desc = component
 		ship = {
-			title = "TECH_UNLOCK_COLOSSUS_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_COLOSSUS_CONSTRUCTION_DESC"
+			title = "TECH_UNLOCK_COLOSSUS_SECTION_TITLE"
+			desc = "TECH_UNLOCK_COLOSSUS_SECTION_DESC"
 		}
 	}
 
