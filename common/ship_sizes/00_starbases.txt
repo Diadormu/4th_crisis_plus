@@ -316,7 +316,7 @@ starbase_citadel = {
 	modifier = {
 		ship_evasion_mult = -1
 		ship_armor_add = 20000
-		starbase_module_capacity_add = 6
+		starbase_module_capacity_add = 8
 		starbase_building_capacity_add = 4
 		starbase_defense_platform_capacity_add = 15
 		#trade system

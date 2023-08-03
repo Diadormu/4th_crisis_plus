@@ -14,7 +14,7 @@ orbital_ring_tier_1 = {
 		ship_armor_add = 1000
 		starbase_defense_platform_capacity_add = 2
 		starbase_module_capacity_add = 2
-		starbase_building_capacity_add = 0
+		starbase_building_capacity_add = 1
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 1.0
@@ -84,7 +84,7 @@ orbital_ring_tier_2 = {
 		ship_armor_add = 2000
 		starbase_defense_platform_capacity_add = 4
 		starbase_module_capacity_add = 3
-		starbase_building_capacity_add = 1
+		starbase_building_capacity_add = 2
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 1.0
@@ -154,7 +154,7 @@ orbital_ring_tier_3 = {
 		ship_armor_add = 2000
 		starbase_defense_platform_capacity_add = 6
 		starbase_module_capacity_add = 4
-		starbase_building_capacity_add = 2
+		starbase_building_capacity_add = 3
 	}
 	ship_modifier = {
 		ship_fire_rate_mult = 1.0
