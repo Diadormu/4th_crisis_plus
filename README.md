@@ -16,6 +16,14 @@
   unlock fortified new ship sections after finished all types Advanced Ship Hulls tech
 - 添加强化巨像和主宰的科技，完成后将解锁强化船体；  
   add fortified colossus and juggernaut tech, after finished will unlock fortified new ship sections
+- 允许设计工程船、殖民船、科研船、运输舰；  
+  allow design Construction Ships、Colonizer Ships、Science Ships、Transport Ships
+
+- 为擎天堡升级添加两个恒星基地的空恒星基地模块位；  
+  add two empty Starbase Modules for Citadel
+- 为1级星环基地升级添加一个空建筑位；  
+  add a enpty Buildings for level 1 Orbital Ring update
+
 - 添加一个黑洞带碎环带遗迹球母星系  
   add a home system with Ruined Ring World and Relic Planet arround Black Hole
 - 支持中文  
@@ -23,15 +31,13 @@
 
 未来计划：
 future plans:  
-- 为擎天堡升级添加两个恒星基地的空恒星基地建筑位；  
-  add two empty Starbase Buildings for Citadel
-- 为3级星环基地升级添加一个空模块位；  
-  add a enpty Module for level 3 Orbital Ring update
-- 尝试允许设计恒星基地、星环基地、工程船、科研船、运输舰  
-  Trying to allow design Starbase、Orbital Ring、Construction Ships、Science Ships、Transport Ships
+- 尝试允许设计恒星基地、星环基地  
+  Trying to allow design Starbase、Orbital Ring
+- 为民用船添加一个燃烧室模块  
+  add a afterburner for civilian ships
 
-**由于修改了部分巨构相关文件，所以与所有类似mod冲突，如果要使本mod生效必须将它排在它们下面**  
-**because of modifyed some megastructures files, it conflicts with all similar mods, if want this mod to work, must place it below them**  
+**由于修改了部分巨构、星环基地、恒星基地、舰船类型相关文件，所以与所有类似mod冲突，如果要使本mod生效必须将它排在它们下面**  
+**because of modifyed some megastructures\orbital rings\starbases\ship sizes files, it conflicts with all similar mods, if want this mod to work, must place it below them**  
 已修改的原始文件：
 modifyed original files:  
 ```
@@ -46,6 +52,9 @@ common/megastructures/09_interstellar_assembly.txt
 common/megastructures/11_mega_shipyard.txt
 common/megastructures/13_quantum_catapult.txt
 common/megastructures/habitats.txt
+common/ship_sizes/00_orbital_rings.txt
+common/ship_sizes/00_ship_sizes.txt
+common/ship_sizes/00_starbases.txt
 ```
 
 [⭐Github🌟](https://github.com/Diadormu/4th_crisis_plus)
