@@ -1,0 +1,124 @@
+utility_component_template = {
+	key = "CIVILIAN_AFTERBURNER_EMPTY"
+	size = small
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+
+	size_restriction = {science constructor colonizer sponsored_colonizer lithoid_colonizer transport }
+	prerequisites = { }
+	component_set = "civilian_afterburner_components"
+	upgrades_to = "CIVILIAN_AFTERBURNER_1"
+
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "CIVILIAN_AFTERBURNER_1"
+	size = small
+	icon = "GFX_ship_part_afterburner_1"
+	icon_frame = 1
+	power = -10
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 4
+		}
+	}
+
+	modifier = {
+		ship_speed_mult = 0.10
+		ship_evasion_mult = 0.05
+	}
+
+	size_restriction = {science constructor colonizer sponsored_colonizer lithoid_colonizer transport }
+	prerequisites = { "tech_afterburners_1" }
+	component_set = "civilian_afterburner_components"
+	upgrades_to = "CIVILIAN_AFTERBURNER_2"
+
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_kinetic
+		}
+		modifier = {
+			factor = 0.5
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CIVILIAN_AFTERBURNER_2"
+	size = small
+	icon = "GFX_ship_part_afterburner_2"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 6
+		}
+	}
+
+	modifier = {
+		ship_speed_mult = 0.20
+		ship_evasion_mult = 0.10
+	}
+
+	size_restriction = {science constructor colonizer sponsored_colonizer lithoid_colonizer transport }
+	prerequisites = { "tech_afterburners_2" }
+	component_set = "civilian_afterburner_components"
+	upgrades_to = "CIVILIAN_AFTERBURNER_3"
+
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_kinetic
+		}
+		modifier = {
+			factor = 0.5
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+}
+
+utility_component_template = {
+	key = "CIVILIAN_AFTERBURNER_3"
+	size = small
+	icon = "GFX_esc_afterburners_3"
+	icon_frame = 1
+	power = -30
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 8
+		}
+	}
+
+	modifier = {
+		ship_speed_mult = 0.30
+		ship_evasion_mult = 0.15
+	}
+
+	size_restriction = {science constructor colonizer sponsored_colonizer lithoid_colonizer transport }
+	prerequisites = { "esc_tech_afterburners_3" }
+	component_set = "civilian_afterburner_components"
+	upgrades_to = "CIVILIAN_AFTERBURNER_DARK_MATTER"
+
+	ai_weight = {
+		weight = 15
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = weapon_type_kinetic
+		}
+		modifier = {
+			factor = 0.5
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+}

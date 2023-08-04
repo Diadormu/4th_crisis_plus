@@ -1,0 +1,7 @@
+component_set = {
+	key = "civilian_afterburner_components"
+
+	required_component_set = yes
+	icon = "GFX_ship_part_afterburner_1"
+	icon_frame = 1
+}

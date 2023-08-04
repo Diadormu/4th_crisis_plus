@@ -602,6 +602,7 @@ constructor = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
+	required_component_set = "civilian_afterburner_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
 
@@ -664,6 +665,7 @@ colonizer = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
+	required_component_set = "civilian_afterburner_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
 
@@ -797,6 +799,7 @@ sponsored_colonizer = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
+	required_component_set = "civilian_afterburner_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
 	use_shipnames_from = colonizer
@@ -862,6 +865,7 @@ lithoid_colonizer = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
+	required_component_set = "civilian_afterburner_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
 	use_shipnames_from = colonizer
@@ -925,6 +929,7 @@ science = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
+	required_component_set = "civilian_afterburner_components"
 	required_component_set = "science_cloaking_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
@@ -986,6 +991,7 @@ transport = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
+	required_component_set = "civilian_afterburner_components"
 	auto_upgrade = yes
 }
 

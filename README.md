@@ -18,6 +18,8 @@
   add fortified colossus and juggernaut tech, after finished will unlock fortified new ship sections
 - 允许设计工程船、殖民船、科研船、运输舰；  
   allow design Construction Ships、Colonizer Ships、Science Ships、Transport Ships
+- 为民用船添加一个加力燃烧室模块  
+  add a afterburner for civilian ships
 
 - 为擎天堡升级添加两个恒星基地的空恒星基地模块位；  
   add two empty Starbase Modules for Citadel
@@ -33,8 +35,6 @@
 future plans:  
 - 尝试允许设计恒星基地、星环基地  
   Trying to allow design Starbase、Orbital Ring
-- 为民用船添加一个燃烧室模块  
-  add a afterburner for civilian ships
 
 **由于修改了部分巨构、星环基地、恒星基地、舰船类型相关文件，所以与所有类似mod冲突，如果要使本mod生效必须将它排在它们下面**  
 **because of modifyed some megastructures\orbital rings\starbases\ship sizes files, it conflicts with all similar mods, if want this mod to work, must place it below them**  
