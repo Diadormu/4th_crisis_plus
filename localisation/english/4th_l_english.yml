@@ -45,13 +45,13 @@
   SHIP_COLOSSUS_SECTION_W1X1M2P4: "Advanced Colossus"
 
   tech_juggernaut_hull: "Advanced Juggernaut Hulls"
-  tech_juggernaut_hull_desc: ""
-  TECH_UNLOCK_JUGGERNAUT_SECTION_TITLE: "§HUnlocks:§! Advanced Juggernaut Ship Section"
-  TECH_UNLOCK_JUGGERNAUT_SECTION_DESC: ""
+  tech_juggernaut_hull_desc: "Unlocks Advanced Juggernaut Ship Section"
+  TECH_UNLOCK_JUGGERNAUT_SECTION_TITLE: "§HUnlocks Ship Section:§! Advanced Juggernaut"
+  TECH_UNLOCK_JUGGERNAUT_SECTION_DESC: "Unlocks Advanced Juggernaut Ship Section"
   tech_colossus_hull: "Advanced Colossus Hulls"
-  tech_colossus_hull_desc: ""
-  TECH_UNLOCK_COLOSSUS_SECTION_TITLE: "§HUnlocks:§! Advanced Colossus Ship Section"
-  TECH_UNLOCK_COLOSSUS_SECTION_DESC: ""
+  tech_colossus_hull_desc: "Unlocks Advanced Colossus Ship Section"
+  TECH_UNLOCK_COLOSSUS_SECTION_TITLE: "§HUnlocks Ship Section:§! Advanced Colossus"
+  TECH_UNLOCK_COLOSSUS_SECTION_DESC: "Unlocks Advanced Colossus Ship Section"
 
   PERDITION_BEAM_JUGGERNAUT: "$PERDITION_BEAM$"
   PERDITION_BEAM_JUGGERNAUT_DESC: "$PERDITION_BEAM_DESC$"
@@ -60,7 +60,7 @@
 
   CIVILIAN_AFTERBURNER_EMPTY: "Empty Slot"
   civilian_afterburner_components: "Afterburners"
-  civilian_afterburner_components_desc: ""
+  civilian_afterburner_components_desc: "civilian ships' Afterburners"
   CIVILIAN_AFTERBURNER_1: "$AFTERBURNER_1$"
   CIVILIAN_AFTERBURNER_1_DESC: "$AFTERBURNER_1_DESC"
   CIVILIAN_AFTERBURNER_2: "$AFTERBURNER_2$"
