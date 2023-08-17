@@ -1,0 +1,33 @@
+tech_repeatable_improved_core_system_cap = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { statecraft }
+	levels = 10
+	prerequisites = { "tech_galactic_bureaucracy" }
+	weight = @repeatableTechWeight
+
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+
+	ai_weight = {
+		factor = 1.0
+	}
+
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+
+	modifier = {
+		empire_size_branch_office_mult = -0.02
+		empire_size_districts_mult = -0.02
+		empire_size_systems_mult = -0.02
+		empire_size_colonies_mult = -0.02
+		empire_size_pops_mult = -0.02
+	}
+}
