@@ -1,4 +1,4 @@
-@base_moon_distance = 10
+@base_moon_distance = 11
 @entity_offset_height = -13
 
 lost_temple = {
@@ -8,8 +8,20 @@ lost_temple = {
 	usage = custom_empire
 
 	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 62
+	}
+	asteroid_belt = {
+		type = debris_asteroid_belt
+		radius = 64
+	}
+	asteroid_belt = {
+		type = icy_asteroid_belt
+		radius = 66
+	}
+	asteroid_belt = {
 		type = crystal_asteroid_belt
-		radius = 60
+		radius = 68
 	}
 
 	planet = {
@@ -462,22 +474,22 @@ lost_temple = {
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 0
-			orbit_distance = 40
+			orbit_distance = 45
 		}
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 90
-			orbit_distance = 40
+			orbit_distance = 45
 		}
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 180
-			orbit_distance = 40
+			orbit_distance = 45
 		}
 		spawn_megastructure = {
 			type = "ring_world_ruined"
 			orbit_angle = 270
-			orbit_distance = 40
+			orbit_distance = 45
 		}
 
 		create_ambient_object = {
@@ -545,8 +557,8 @@ lost_temple = {
 		}
 	}
 
-	#85
-	change_orbit = 50
+	#90
+	change_orbit = 55
 	planet = {
 		class = pc_relic
 		orbit_distance = 0
@@ -568,8 +580,8 @@ lost_temple = {
 		}
 	}
 
-	#115
-	change_orbit = 30
+	#120
+	change_orbit = 35
 	planet = {
 		class = ideal_planet_class
 		home_planet = yes

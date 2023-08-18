@@ -58,7 +58,7 @@ leader_trait_cyborg = {
 #	opposites = {
 #		leader_trait_psionic
 #		leader_trait_chosen
-	}
+#	}
 	initial = no
 	randomized = no
 	notify_on_gained = no
