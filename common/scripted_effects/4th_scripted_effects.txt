@@ -1,8 +1,8 @@
 create_cybernetic_species_mod = {
 	species = {
 		modify_species = {
-			remove_trait = trait_latent_psionic
-			remove_trait = trait_psionic
+#			remove_trait = trait_latent_psionic
+#			remove_trait = trait_psionic
 			effect = {
 				create_species = {
 					is_mod = yes
