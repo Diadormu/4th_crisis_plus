@@ -54,9 +54,6 @@ common/megastructures/09_interstellar_assembly.txt
 common/megastructures/11_mega_shipyard.txt
 common/megastructures/13_quantum_catapult.txt
 common/megastructures/habitats.txt
-common/ship_sizes/00_orbital_rings.txt
-common/ship_sizes/00_ship_sizes.txt
-common/ship_sizes/00_starbases.txt
 ```
 
 [⭐Github🌟](https://github.com/Diadormu/4th_crisis_plus)
