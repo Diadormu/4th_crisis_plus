@@ -30,18 +30,18 @@ ap_engineered_evolution = {
 			fail_text = "requires_technology_gene_tailoring"
 			has_technology = tech_gene_tailoring
 		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_the_flesh_is_weak"
-			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_organo_machine_interfacing"
-			NOT = { has_ascension_perk = ap_organo_machine_interfacing }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_mind_over_matter"
-			NOT = { has_ascension_perk = ap_mind_over_matter }
-		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_the_flesh_is_weak"
+#			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+#		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_organo_machine_interfacing"
+#			NOT = { has_ascension_perk = ap_organo_machine_interfacing }
+#		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_mind_over_matter"
+#			NOT = { has_ascension_perk = ap_mind_over_matter }
+#		}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_synthetic_evolution"
 			NOT = { has_ascension_perk = ap_synthetic_evolution }
@@ -57,10 +57,10 @@ ap_engineered_evolution = {
 		NOR = {
 			has_ascension_perk = ap_engineered_evolution
 			has_authority = "auth_machine_intelligence"
-			has_origin = origin_shroudwalker_apprentice
+#			has_origin = origin_shroudwalker_apprentice
 		}
 		is_mechanical_empire = no
-		is_cyborg_empire = no
+#		is_cyborg_empire = no
 	}
 
 	ai_weight = {
@@ -94,14 +94,14 @@ ap_the_flesh_is_weak = {
 			fail_text = "requires_technology_integrated_cybernetics"
 			has_technology = tech_integrated_cybernetics
 		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_engineered_evolution"
-			NOT = { has_ascension_perk = ap_engineered_evolution }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_mind_over_matter"
-			NOT = { has_ascension_perk = ap_mind_over_matter }
-		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_engineered_evolution"
+#			NOT = { has_ascension_perk = ap_engineered_evolution }
+#		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_mind_over_matter"
+#			NOT = { has_ascension_perk = ap_mind_over_matter }
+#		}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_synthetic_evolution"
 			NOT = { has_ascension_perk = ap_synthetic_evolution }
@@ -116,7 +116,7 @@ ap_the_flesh_is_weak = {
 		has_utopia = yes
 		NOR = {
 			has_ascension_perk = ap_the_flesh_is_weak
-			has_origin = origin_shroudwalker_apprentice
+#			has_origin = origin_shroudwalker_apprentice
 		}
 		is_gestalt = no
 	}
@@ -151,10 +151,10 @@ ap_organo_machine_interfacing = {
 			fail_text = "requires_technology_integrated_cybernetics"
 			has_technology = tech_integrated_cybernetics
 		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_engineered_evolution"
-			NOT = { has_ascension_perk = ap_engineered_evolution }
-		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_engineered_evolution"
+#			NOT = { has_ascension_perk = ap_engineered_evolution }
+#		}
 		custom_tooltip = {
 			fail_text = "requires_free_tradition_tree"
 			num_tradition_categories < 7
@@ -284,10 +284,10 @@ ap_synthetic_evolution = {
 			fail_text = "requires_not_ap_the_flesh_is_weak"
 			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
 		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_mind_over_matter"
-			NOT = { has_ascension_perk = ap_mind_over_matter }
-		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_mind_over_matter"
+#			NOT = { has_ascension_perk = ap_mind_over_matter }
+#		}
 		custom_tooltip = {
 			fail_text = "requires_free_tradition_tree"
 			num_tradition_categories < 7
@@ -301,7 +301,7 @@ ap_synthetic_evolution = {
 			has_authority = "auth_machine_intelligence"
 			has_origin = origin_shroudwalker_apprentice
 		}
-		is_gestalt = no
+#		is_gestalt = no
 		is_mechanical_empire = no
 	}
 
@@ -334,10 +334,10 @@ ap_mind_over_matter = {
 		add_research_option = tech_telepathy
 	}
 	possible = {
-		custom_tooltip = {
-			fail_text = "synthetic_empire_psionic_ascension"
-			NOT = { has_trait = trait_mechanical }
-		}
+#		custom_tooltip = {
+#			fail_text = "synthetic_empire_psionic_ascension"
+#			NOT = { has_trait = trait_mechanical }
+#		}
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_1"
 			num_ascension_perks > 0
@@ -346,18 +346,18 @@ ap_mind_over_matter = {
 			fail_text = "requires_technology_psionic_theory"
 			has_technology = tech_psionic_theory
 		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_engineered_evolution"
-			NOT = { has_ascension_perk = ap_engineered_evolution }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_the_flesh_is_weak"
-			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
-		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_synthetic_evolution"
-			NOT = { has_ascension_perk = ap_synthetic_evolution }
-		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_engineered_evolution"
+#			NOT = { has_ascension_perk = ap_engineered_evolution }
+#		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_the_flesh_is_weak"
+#			NOT = { has_ascension_perk = ap_the_flesh_is_weak }
+#		}
+#		custom_tooltip = {
+#			fail_text = "requires_not_ap_synthetic_evolution"
+#			NOT = { has_ascension_perk = ap_synthetic_evolution }
+#		}
 		custom_tooltip = {
 			fail_text = "requires_free_tradition_tree"
 			num_tradition_categories < 7
@@ -370,9 +370,9 @@ ap_mind_over_matter = {
 			has_ascension_perk = ap_mind_over_matter
 			has_origin = origin_shroudwalker_apprentice
 		}
-		is_gestalt = no
-		is_mechanical_empire = no
-		is_cyborg_empire = no
+#		is_gestalt = no
+#		is_mechanical_empire = no
+#		is_cyborg_empire = no
 	}
 
 	ai_weight = {
@@ -463,14 +463,14 @@ ap_transcendence = {
 		add_base_country_intel = 10
 	}
 	possible = {
-		custom_tooltip = {
-			fail_text = "synthetic_empire_psionic_ascension"
-			NOT = { has_trait = trait_mechanical }
-		}
-		custom_tooltip = {
-			fail_text = "hive_mind_biological_ascension_only1"
-			NOT = { has_authority = auth_hive_mind }
-		}
+#		custom_tooltip = {
+#			fail_text = "synthetic_empire_psionic_ascension"
+#			NOT = { has_trait = trait_mechanical }
+#		}
+#		custom_tooltip = {
+#			fail_text = "hive_mind_biological_ascension_only1"
+#			NOT = { has_authority = auth_hive_mind }
+#		}
 		custom_tooltip = {
 			fail_text = "requires_ascension_perks_2"
 			num_ascension_perks > 1

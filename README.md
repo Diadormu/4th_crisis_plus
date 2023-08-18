@@ -6,11 +6,11 @@
 - 允许单星系和多星星系内建造多个巨构；  
   allow build all types megastructures in one solar system
 	> 允许在多星星系建造环世界、戴森球、巨型船坞  
-      allow build Ring World、Dyson Sphere、Mega Shipyard in multiple star system  
+    allow build Ring World、Dyson Sphere、Mega Shipyard in multiple star system  
 	> 允许在环带上建造哨兵阵列、科学枢纽、战略指挥中心、巨型艺术设施、星际集会  
-      allow build Sentry Array、Science Nexus、Matter Decompressor、Mega Art Installation、Interstellar Assembly above Ring World  
+    allow build Sentry Array、Science Nexus、Matter Decompressor、Mega Art Installation、Interstellar Assembly above Ring World  
 	> 允许在黑洞，中子星或者脉冲星周围建造巨型船坞  
-      allow build Mega Shipyard above Black Hole、Neutron Star、Pulsar  
+    allow build Mega Shipyard above Black Hole、Neutron Star、Pulsar  
 
 - 每种舰船研究先进船体科技后将解锁新的强化船体；  
   unlock fortified new ship sections after finished all types Advanced Ship Hulls tech
@@ -25,6 +25,13 @@
   add two empty Starbase Modules for Citadel
 - 为1级星环基地升级添加一个空建筑位；  
   add a enpty Buildings for level 1 Orbital Ring update
+
+- 为基因、义体、合成、灵能飞升和格式塔、蜂巢解开部分互斥；  
+  unlocked some mutual exclusions of Genetics、Cybernetics、Synthetics、Psionics ascension perks and Gestalt、Hive
+	> 允许基因、义体、灵能共存，并与蜂巢思维共存  
+    allow Genetics、Cybernetics、Psionics coexist, and coexist with Hive  
+	> 允许灵能装罐，但虚境导师起源不行  
+    except Teachers of the Shroud origin allow Synthetics、Psionics coexist  
 
 - 添加一个黑洞带碎环带遗迹球母星系  
   add a home system with Ruined Ring World and Relic Planet arround Black Hole
