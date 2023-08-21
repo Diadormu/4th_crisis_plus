@@ -1,3 +1,5 @@
+namespace = utopia
+
 # New Leaders Get Erudite Trait
 country_event = {
 	id = utopia.2509
@@ -20,51 +22,6 @@ country_event = {
 	immediate = {
 		from = {
 			add_trait_no_notify = leader_trait_erudite
-		}
-	}
-}
-
-country_event = { #New leaders get Brainslug Trait
-	id = distar.173
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_country_flag = finished_brainslug_chain
-		from.species = {
-			NOR = {
-#				has_trait = trait_cybernetic
-				has_trait = trait_mechanical
-				has_trait = trait_machine_unit
-				is_species_class = ROBOT
-			}
-		}
-	}
-
-	immediate = {
-		from = {
-			if = {
-				limit = {
-					species = {
-						NOR = {
-#							has_trait = trait_cybernetic
-							has_trait = trait_mechanical
-							has_trait = trait_machine_unit
-							is_species_class = ROBOT
-						}
-					}
-				}
-				random_list = {
-					80 = {
-						#Nothing
-					}
-					20 = {
-						add_trait = leader_trait_brainslug
-					}
-				}
-				break = yes
-			}
 		}
 	}
 }

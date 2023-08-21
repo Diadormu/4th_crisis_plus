@@ -1,7 +1,8 @@
+#rm?
 trait_cybernetic = {
 	cost = 0
 
-#	opposites = { "trait_latent_psionic" "trait_psionic" }
+	opposites = { "trait_latent_psionic" "trait_psionic" }
 
 	improves_leaders = yes
 	initial = no
@@ -52,7 +53,7 @@ trait_latent_psionic = {
 	potential_crossbreeding_chance = 0.25
 	icon = "gfx/interface/icons/traits/trait_latent_psionic_species.dds"
 
-#	opposites = { "trait_cybernetic" }
+	opposites = { "trait_cybernetic" }
 
 	initial = no
 	randomized = no
@@ -97,7 +98,7 @@ trait_psionic = {
 	potential_crossbreeding_chance = 0.25
 	icon = "gfx/interface/icons/traits/trait_psionic_species.dds"
 
-#	opposites = { "trait_cybernetic" }
+	opposites = { "trait_cybernetic" }
 
 	improves_leaders = yes
 	initial = no

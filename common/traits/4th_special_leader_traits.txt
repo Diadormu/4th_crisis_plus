@@ -1,3 +1,4 @@
+#rm?
 leader_trait_cyborg = {
 	is_councilor_trait_for_ruler = yes
 	inline_script = {
@@ -55,10 +56,10 @@ leader_trait_cyborg = {
 		empire_size_districts_mult = -0.05
 	}
 	leader_class = { admiral scientist general governor }
-#	opposites = {
-#		leader_trait_psionic
-#		leader_trait_chosen
-#	}
+	opposites = {
+		leader_trait_psionic
+		leader_trait_chosen
+	}
 	initial = no
 	randomized = no
 	notify_on_gained = no
@@ -121,10 +122,10 @@ leader_trait_synthetic = {
 		planet_pop_assembly_add = 1
 	}
 	leader_class = { admiral scientist general governor }
-#	opposites = {
-#		leader_trait_psionic
-#		leader_trait_chosen
-#	}
+	opposites = {
+		leader_trait_psionic
+		leader_trait_chosen
+	}
 	initial = no
 	randomized = no
 	notify_on_gained = no
@@ -190,10 +191,10 @@ leader_trait_psionic = {
 		category_psionics_research_speed_mult = 0.10
 	}
 	leader_class = { admiral scientist general governor }
-#	opposites = {
-#		leader_trait_cyborg
-#		leader_trait_synthetic
-#	}
+	opposites = {
+		leader_trait_cyborg
+		leader_trait_synthetic
+	}
 	initial = no
 	randomized = no
 	notify_on_gained = no
@@ -261,10 +262,10 @@ leader_trait_composer_chosen = {
 		country_leader_cap_add = 1
 	}
 	leader_class = { admiral scientist general governor }
-#	opposites = {
-#		leader_trait_cyborg
-#		leader_trait_synthetic
-#	}
+	opposites = {
+		leader_trait_cyborg
+		leader_trait_synthetic
+	}
 	initial = no
 	randomized = no
 }
@@ -323,10 +324,10 @@ leader_trait_instrument_chosen = {
 		trade_value_mult = 0.15
 	}
 	leader_class = { admiral scientist general governor }
-#	opposites = {
-#		leader_trait_cyborg
-#		leader_trait_synthetic
-#	}
+	opposites = {
+		leader_trait_cyborg
+		leader_trait_synthetic
+	}
 	initial = no
 	randomized = no
 }
@@ -375,10 +376,10 @@ leader_trait_eater_chosen = {
 		starbase_shipyard_build_speed_mult = 0.15
 	}
 	leader_class = { admiral scientist general governor }
-#	opposites = {
-#		leader_trait_cyborg
-#		leader_trait_synthetic
-#	}
+	opposites = {
+		leader_trait_cyborg
+		leader_trait_synthetic
+	}
 	initial = no
 	randomized = no
 }
@@ -437,10 +438,10 @@ leader_trait_whisperers_chosen = {
 		intel_encryption_add = 1
 	}
 	leader_class = { admiral scientist general governor }
-#	opposites = {
-#		leader_trait_cyborg
-#		leader_trait_synthetic
-#	}
+	opposites = {
+		leader_trait_cyborg
+		leader_trait_synthetic
+	}
 	initial = no
 	randomized = no
 }
