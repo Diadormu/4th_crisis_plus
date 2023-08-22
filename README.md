@@ -35,6 +35,8 @@
   add a home system with Ruined Ring World and Relic Planet arround Black Hole
 - 参考Ethics and Civics Classic修改了行政效率循环科技，但上限为10层，0帝国规模太bug了  
   revised Administrative Efficiency repeatable tech with reference to Ethics and Civics Classic, but limited to level 10, 0 Empire Size is too IMBA
+- 领袖刷新时间降为1年  
+  LEADER POOL REFRESH TIME reduced to 1 year
 - 支持中文  
   English Supported
 
