@@ -44,3 +44,36 @@ country_event = { #New leaders get Brainslug Trait
 		}
 	}
 }
+
+country_event = { #Pool leaders get Brainslug Trait
+	id = distar.174
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_pool_leader = {
+			if = {
+				limit = {
+					NOR = {
+						has_trait = leader_trait_brainslug
+						species = {
+#							has_trait = trait_cybernetic
+							has_trait = trait_mechanical
+							has_trait = trait_machine_unit
+							is_species_class = ROBOT
+						}
+					}
+				}
+				random_list = {
+					80 = {
+						#Nothing
+					}
+					20 = {
+						add_trait = leader_trait_brainslug
+					}
+				}
+			}
+		}
+	}
+}

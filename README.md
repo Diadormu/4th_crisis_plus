@@ -26,8 +26,10 @@
 - 为1级星环基地升级添加一个空建筑位；  
   add a enpty Buildings for level 1 Orbital Ring update
 
+- 允许唯物和蜂群发现灵能理论  
+  allow Materialist and Hive "draw" the Psionic Theory
 - 允许基因与义体或灵能共存，并都与蜂巢思维共存  
-  allow Genetics coexist with Cybernetics or Psionics, and all coexist with Hive
+  allow the Ascension Perk Genetics coexist with Cybernetics or Psionics, and all coexist with Hive
 
 - 添加一个黑洞带碎环带遗迹球母星系  
   add a home system with Ruined Ring World and Relic Planet arround Black Hole

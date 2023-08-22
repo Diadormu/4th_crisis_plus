@@ -1,61 +1,18 @@
-#rm?
-create_cybernetic_species_mod = {
-	species = {
-		modify_species = {
-			remove_trait = trait_latent_psionic
-			remove_trait = trait_psionic
-			effect = {
-				create_species = {
-					is_mod = yes
-					name = this
-					plural = this
-					class = this
-					portrait = this
-					traits = this
-					can_be_modified = this
-					homeworld = this
-					namelist = this
-					gender = this
-					traits = {
-						ideal_planet_class = this
-						trait = trait_cybernetic
-					}
-				}
+remove_leader_traits_after_modification = {
+	if = {
+		limit = {
+			species = {
+#				OR = {
+					NOT = { has_trait = trait_erudite }
+#					has_trait = trait_cybernetic
+#					has_trait = trait_psionic
+#					has_trait = trait_latent_psionic
+#				}
 			}
 		}
-		save_event_target_as = changing_species
-	}
-
-	owner = {
-		every_owned_pop = {
-			limit = { is_exact_same_species = event_target:changing_species }
-			change_species = last_created_species
-		}
-		every_owned_leader = {
-			limit = { is_exact_same_species = event_target:changing_species }
-			change_species = last_created_species
-		}
-		every_pool_leader = {
-			limit = { is_exact_same_species = event_target:changing_species }
-			change_species = last_created_species
-		}
-		every_envoy = {
-			limit = { is_exact_same_species = event_target:changing_species }
-			change_species = last_created_species
-		}
-		every_owned_army = {
-			limit = {
-				exists = species
-				is_exact_same_species = event_target:changing_species
-			}
-			change_species = last_created_species
-		}
-		every_controlled_ship = {
-			limit = {
-				is_ship_class = shipclass_colonizer
-				is_exact_same_species = event_target:changing_species
-			}
-			change_species = last_created_species
+		if = {
+			limit = { has_trait = leader_trait_erudite }
+			remove_trait = leader_trait_erudite
 		}
 	}
 }
