@@ -12,7 +12,7 @@ tech_psionic_theory = {
 
 	potential = {
 		OR = { #The OR is so that Gestalts can get Zro Distillation with that Resolution
-#			NOT = { has_ethic = ethic_gestalt_consciousness }
+			NOT = { has_authority = auth_machine_intelligence }
 			is_active_resolution = resolution_galacticstudies_extradimensional_experimentation
 			has_relic = r_zro_crystal
 		}
@@ -85,8 +85,9 @@ tech_psionic_theory = {
 		}
 		modifier = {
 			factor = 2
-			any_owned_planet = {
-				has_modifier = pm_shroudwalker_teacher
+			has_paragon_dlc = no
+			any_owned_leader = {
+				has_trait = leader_trait_shroudwalker
 			}
 		}
 		modifier = {
@@ -94,7 +95,8 @@ tech_psionic_theory = {
 			AND = {
 				is_materialist = yes
 				NOR = {
-					has_trait_in_council = { TRAIT = leader_trait_expertise_psionics }
+					has_trait_tier1or2or3 = { TRAIT = leader_trait_expertise_psionics }
+					has_councilor = { COUNCILOR = "councilor_shroudwalker_teacher" }
 					any_owned_pop = {
 						OR = {
 							pop_has_trait = trait_psionic

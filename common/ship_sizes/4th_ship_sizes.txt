@@ -134,7 +134,6 @@ colonizer = {
 				from = {
 					is_hive_empire = yes
 					is_lithoid_empire = no
-					NOT = { has_origin = origin_tree_of_life }
 				}
 			}
 			alloys = 200
@@ -144,31 +143,7 @@ colonizer = {
 			trigger = {
 				from = {
 					is_hive_empire = yes
-					is_lithoid_empire = no
-					has_origin = origin_tree_of_life
-				}
-			}
-			alloys = 50
-			food = 1000
-		}
-		cost = {
-			trigger = {
-				from = {
-					is_hive_empire = yes
 					is_lithoid_empire = yes
-					has_origin = origin_tree_of_life
-				}
-			}
-			alloys = 50
-			food = 500
-			minerals = 500
-		}
-		cost = {
-			trigger = {
-				from = {
-					is_hive_empire = yes
-					is_lithoid_empire = yes
-					NOT = { has_origin = origin_tree_of_life }
 				}
 			}
 			alloys = 200
@@ -387,7 +362,7 @@ science = {
 	ai_ship_data = {
 		min = value:desired_science_ships
 		system_mult = value:desired_science_ships_system_mult
-		max = 5
+		max = value:max_science_ships
 	}
 }
 

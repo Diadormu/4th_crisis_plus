@@ -9,11 +9,19 @@ country_event = { #New leaders get Brainslug Trait
 	trigger = {
 		has_country_flag = finished_brainslug_chain
 		from.species = {
-			NOR = {
-#				has_trait = trait_cybernetic
-				has_trait = trait_mechanical
-				has_trait = trait_machine_unit
-				is_species_class = ROBOT
+			NOT = {
+#				has_leader_flag = beholder
+				has_leader_flag = gray_leader
+#				has_trait = leader_trait_governor_oracle
+			}
+			species = {
+				NOR = {
+#					has_trait = trait_cybernetic
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+					is_species_class = ROBOT
+					is_species_class = AI
+				}
 			}
 		}
 	}
