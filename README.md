@@ -31,8 +31,8 @@
 - 允许基因与义体或灵能共存，并都与蜂巢思维共存  
   allow the Ascension Perk Genetics coexist with Cybernetics or Psionics, and all coexist with Hive
 
-- 添加一个黑洞带碎环带遗迹球母星系  
-  add a home system with Ruined Ring World and Relic Planet arround Black Hole
+- 添加一个黑洞带碎环遗迹球和裂隙的母星系  
+  add a home system with Ruined Ring World、Relic Planet and Astral Rift arround Black Hole
 - 参考Ethics and Civics Classic修改了行政效率循环科技，但上限为10层，0帝国规模太bug了  
   revised Administrative Efficiency repeatable tech with reference to Ethics and Civics Classic, but limited to level 10, 0 Empire Size is too IMBA
 - 领袖刷新时间降为1年  
