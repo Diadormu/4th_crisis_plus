@@ -597,7 +597,7 @@ lost_temple = {
 
 		moon = {
 			count = 1
-			class = pc_machine_broken
+			class = pc_ai
 			orbit_distance = 13
 			orbit_angle = random
 			size = 4

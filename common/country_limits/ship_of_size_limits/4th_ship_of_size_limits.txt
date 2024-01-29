@@ -1,0 +1,28 @@
+colossus_ships_limit = {
+	ship_types = { 
+		colossus
+	}
+	
+	base = 32 # 1 * colossus's size_multiplier
+	max = 64
+	naval_cap_fraction = 0.032
+
+	show = {
+		is_scope_valid = yes
+		has_technology = tech_colossus
+	}
+}
+
+juggernaut_ships_limit = {
+	ship_types = {
+		juggernaut
+	}
+	base = 32 # 1 * juggernaut's size_multiplier
+	max = 64
+	naval_cap_fraction = 0.032
+
+	show = {
+		is_scope_valid = yes
+		has_technology = tech_juggernaut
+	}
+}

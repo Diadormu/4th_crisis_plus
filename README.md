@@ -16,6 +16,8 @@
   unlock fortified new ship sections after finished all types Advanced Ship Hulls tech
 - 添加强化巨像和主宰的科技，完成后将解锁强化船体；  
   add fortified colossus and juggernaut tech, after finished will unlock fortified new ship sections
+- 巨像和主宰上限提升至2，每1000海军容量增加1；  
+  colossus and juggernaut ships limit raised to 2, every 1000 Naval Capacity increases 1
 - 允许设计工程船、殖民船、科研船、运输舰；  
   allow design Construction Ships、Colonizer Ships、Science Ships、Transport Ships
 - 为民用船添加一个加力燃烧室模块  
