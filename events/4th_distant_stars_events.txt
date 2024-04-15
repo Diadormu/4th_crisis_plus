@@ -44,6 +44,14 @@ country_event = { #New leaders get Brainslug Trait
 						#Nothing
 					}
 					20 = {
+						modifier = {
+							factor = 0.5
+							has_ethic = ethic_xenophobe
+						}
+						modifier = {
+							factor = 2
+							has_ethic = ethic_xenophile
+						}
 						add_trait = leader_trait_brainslug
 					}
 				}
@@ -78,6 +86,14 @@ country_event = { #Pool leaders get Brainslug Trait
 						#Nothing
 					}
 					20 = {
+						modifier = {
+							factor = 0.5
+							has_ethic = ethic_xenophobe
+						}
+						modifier = {
+							factor = 2
+							has_ethic = ethic_xenophile
+						}
 						add_trait = leader_trait_brainslug
 					}
 				}
