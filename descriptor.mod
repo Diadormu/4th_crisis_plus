@@ -7,5 +7,5 @@ tags={
 	"Utilities"
 }
 name="The 4th Crisis limited reinforcement"
-supported_version="3.10.*"
+supported_version="3.12.*"
 remote_file_id="3007983560"
