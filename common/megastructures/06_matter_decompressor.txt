@@ -71,10 +71,15 @@ matter_decompressor_0 = {
 			fail_text = "requires_no_existing_matter_decompressor_two"
 			from = { NOT = { has_country_flag = built_matter_decompressor_site_contingency } }
 		}
-#		custom_tooltip = {
-#			fail_text = "requires_no_existing_megastructure"
-#			has_no_non_gate_megastructure = yes
-#		}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_existing_megastructure"
+		#	has_no_non_gate_megastructure = yes
+		#	NOT = {
+		#		any_system_planet = {
+		#			is_planet_class = pc_cosmogenesis_world
+		#		}
+		#	}
+		#}
 	}
 
 	placement_rules = {
