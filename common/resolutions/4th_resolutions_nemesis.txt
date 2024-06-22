@@ -41,7 +41,7 @@ resolution_galacticreforms_nominate_custodian = {
 			fail_text = "nominate_other_custodian_not_crisis"
 			NOR = {
 				has_ascension_perk = ap_become_the_crisis
-				has_ascension_perk = ap_cosmogenesis
+				#has_ascension_perk = ap_cosmogenesis
 				has_valid_civic = civic_pompous_purists
 			}
 		}
@@ -74,7 +74,7 @@ resolution_galacticreforms_nominate_custodian = {
 			fail_text = "nominate_custodian_not_crisis"
 			NOR = {
 				has_ascension_perk = ap_become_the_crisis
-				has_ascension_perk = ap_cosmogenesis
+				#has_ascension_perk = ap_cosmogenesis
 			}
 		}
 	}

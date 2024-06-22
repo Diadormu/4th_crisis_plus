@@ -33,6 +33,9 @@
 - 允许基因与义体或灵能共存，并都与蜂巢思维共存  
   allow the Ascension Perk Genetics coexist with Cybernetics or Psionics, and all coexist with Hive
 
+- 宇宙创生与星河卫士和星海监管人解互斥  
+  Cancel mutually exclusive with Cosmogenesis and Defender of the Galaxy or Galactic Custodian
+
 - 添加一个黑洞带碎环遗迹球和裂隙的母星系  
   add a home system with Ruined Ring World、Relic Planet and Astral Rift arround Black Hole
 - 参考Ethics and Civics Classic修改了行政效率循环科技，但上限为10层，0帝国规模太bug了  

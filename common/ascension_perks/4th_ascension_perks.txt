@@ -9,7 +9,7 @@ ap_cosmogenesis = {
 		NOR = {
 			has_ascension_perk = ap_become_the_crisis
 			has_ascension_perk = ap_cosmogenesis
-			has_ascension_perk = ap_defender_of_the_galaxy
+			#has_ascension_perk = ap_defender_of_the_galaxy
 			has_origin = origin_slavers # No crisis for MSI
 		}
 	}
@@ -23,10 +23,10 @@ ap_cosmogenesis = {
 			fail_text = "requires_independence"
 			is_subject = no
 		}
-		custom_tooltip = {
-			fail_text = "must_not_be_custodian"
-			is_galactic_custodian = no
-		}
+		#custom_tooltip = {
+		#	fail_text = "must_not_be_custodian"
+		#	is_galactic_custodian = no
+		#}
 		custom_tooltip = {
 			fail_text = "must_not_be_emperor"
 			is_galactic_emperor = no
@@ -120,7 +120,7 @@ ap_defender_of_the_galaxy = {
 		NOR = {
 			has_ascension_perk = ap_defender_of_the_galaxy
 			has_ascension_perk = ap_become_the_crisis
-			has_ascension_perk = ap_cosmogenesis
+			#has_ascension_perk = ap_cosmogenesis
 		}
 	}
 
