@@ -3,6 +3,8 @@
   lost_temple_DESC: "昔人已乘黄鹤去，此地空余黄鹤楼。\n黄鹤一去不复返，白云千载空悠悠。\n晴川历历汉阳树，芳草萋萋鹦鹉洲。"
   NAME_MOON_MOSS: "吠陀"
   NAME_MOON_HIGH_CASTLE: "源堡"
+  edict_player_buff: "吾即天灾"
+  edict_player_buff_desc: "~"
 
   CORE_JUGGERNAUT_SECTION_T1X2H8M6P4: "先进航母主宰"
   CORE_JUGGERNAUT_SECTION_T1X2L8M6P4: "先进巨炮主宰"

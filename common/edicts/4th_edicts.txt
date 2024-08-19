@@ -1,0 +1,28 @@
+player_buff = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+
+	resources = {
+		category = edicts
+		cost = {
+			unity = 1
+			multiplier = value:edict_size_effect
+		}
+		upkeep = {
+			unity = 1
+			multiplier = value:edict_size_effect
+		}
+	}
+
+	modifier = {
+		leader_trait_selection_options_add = 10
+		negative_traits_leader = -10
+		country_starbase_influence_cost_mult = -0.5
+		BIOLOGICAL_species_trait_picks_add = 10
+		MACHINE_species_trait_picks_add = 10
+	}
+
+	potential = { is_ai = no }
+	allow = { is_ai = no }
+	ai_weight = { weight = 0 }
+}
