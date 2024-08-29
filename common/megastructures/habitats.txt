@@ -30,7 +30,7 @@ habitat_central_complex = {
 		}
 	}
 
-	construction_blocks_and_blocked_by = self_type
+	construction_blocks_and_blocked_by = none
 
 	potential = {
 		OR = {
@@ -83,28 +83,28 @@ habitat_central_complex = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-			custom_tooltip = {
-				fail_text = "requires_no_existing_megastructure"
-				#can_build_megastructure_on_planet = yes
-				NOR = {
-					has_planet_flag = megastructure
-					has_planet_flag = has_megastructure
-					solar_system = {
-						OR = {
-							has_star_flag = ring_world_built
-							has_star_flag = ithomes_gate
-						}
-					}
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_ringworld_habitable_damaged
-					is_planet_class = pc_ringworld_tech
-					is_planet_class = pc_ringworld_tech_damaged
-					is_planet_class = pc_ringworld_seam
-					is_planet_class = pc_ringworld_seam_damaged
-					is_planet_class = pc_habitat
-					is_planet_class = pc_cosmogenesis_world
-				}
-			}
+			#custom_tooltip = {
+			#	fail_text = "requires_no_existing_megastructure"
+			#	#can_build_megastructure_on_planet = yes
+			#	NOR = {
+			#		has_planet_flag = megastructure
+			#		has_planet_flag = has_megastructure
+			#		solar_system = {
+			#			OR = {
+			#				has_star_flag = ring_world_built
+			#				has_star_flag = ithomes_gate
+			#			}
+			#		}
+			#		is_planet_class = pc_ringworld_habitable
+			#		is_planet_class = pc_ringworld_habitable_damaged
+			#		is_planet_class = pc_ringworld_tech
+			#		is_planet_class = pc_ringworld_tech_damaged
+			#		is_planet_class = pc_ringworld_seam
+			#		is_planet_class = pc_ringworld_seam_damaged
+			#		is_planet_class = pc_habitat
+			#		is_planet_class = pc_cosmogenesis_world
+			#	}
+			#}
 
 			# balance for habitats
 			custom_tooltip = {
@@ -300,27 +300,27 @@ major_orbital = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-			custom_tooltip = {
-				fail_text = "requires_no_existing_megastructure"
-				#can_build_megastructure_on_planet = yes
-				NOR = {
-					has_planet_flag = megastructure
-					has_planet_flag = has_megastructure
-					solar_system = {
-						OR = {
-							has_star_flag = ring_world_built
-							has_star_flag = ithomes_gate
-						}
-					}
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_ringworld_habitable_damaged
-					is_planet_class = pc_ringworld_tech
-					is_planet_class = pc_ringworld_tech_damaged
-					is_planet_class = pc_ringworld_seam
-					is_planet_class = pc_ringworld_seam_damaged
-					is_planet_class = pc_habitat
-				}
-			}
+			#custom_tooltip = {
+			#	fail_text = "requires_no_existing_megastructure"
+			#	#can_build_megastructure_on_planet = yes
+			#	NOR = {
+			#		has_planet_flag = megastructure
+			#		has_planet_flag = has_megastructure
+			#		solar_system = {
+			#			OR = {
+			#				has_star_flag = ring_world_built
+			#				has_star_flag = ithomes_gate
+			#			}
+			#		}
+			#		is_planet_class = pc_ringworld_habitable
+			#		is_planet_class = pc_ringworld_habitable_damaged
+			#		is_planet_class = pc_ringworld_tech
+			#		is_planet_class = pc_ringworld_tech_damaged
+			#		is_planet_class = pc_ringworld_seam
+			#		is_planet_class = pc_ringworld_seam_damaged
+			#		is_planet_class = pc_habitat
+			#	}
+			#}
 			custom_tooltip = {
 				fail_text = "requires_no_orbital_debris"
 				NOR = {
@@ -496,27 +496,27 @@ minor_orbital = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-			custom_tooltip = {
-				fail_text = "requires_no_existing_megastructure"
-				#can_build_megastructure_on_planet = yes
-				NOR = {
-					has_planet_flag = megastructure
-					has_planet_flag = has_megastructure
-					solar_system = {
-						OR = {
-							has_star_flag = ring_world_built
-							has_star_flag = ithomes_gate
-						}
-					}
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_ringworld_habitable_damaged
-					is_planet_class = pc_ringworld_tech
-					is_planet_class = pc_ringworld_tech_damaged
-					is_planet_class = pc_ringworld_seam
-					is_planet_class = pc_ringworld_seam_damaged
-					is_planet_class = pc_habitat
-				}
-			}
+			#custom_tooltip = {
+			#	fail_text = "requires_no_existing_megastructure"
+			#	#can_build_megastructure_on_planet = yes
+			#	NOR = {
+			#		has_planet_flag = megastructure
+			#		has_planet_flag = has_megastructure
+			#		solar_system = {
+			#			OR = {
+			#				has_star_flag = ring_world_built
+			#				has_star_flag = ithomes_gate
+			#			}
+			#		}
+			#		is_planet_class = pc_ringworld_habitable
+			#		is_planet_class = pc_ringworld_habitable_damaged
+			#		is_planet_class = pc_ringworld_tech
+			#		is_planet_class = pc_ringworld_tech_damaged
+			#		is_planet_class = pc_ringworld_seam
+			#		is_planet_class = pc_ringworld_seam_damaged
+			#		is_planet_class = pc_habitat
+			#	}
+			#}
 			custom_tooltip = {
 				fail_text = "requires_no_orbital_debris"
 				NOR = {
@@ -696,27 +696,27 @@ major_orbital_knights = {
 				fail_text = "requires_no_anomaly"
 				NOT = { has_anomaly = yes }
 			}
-			custom_tooltip = {
-				fail_text = "requires_no_existing_megastructure"
-				#can_build_megastructure_on_planet = yes
-				NOR = {
-					has_planet_flag = megastructure
-					has_planet_flag = has_megastructure
-					solar_system = {
-						OR = {
-							has_star_flag = ring_world_built
-							has_star_flag = ithomes_gate
-						}
-					}
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_ringworld_habitable_damaged
-					is_planet_class = pc_ringworld_tech
-					is_planet_class = pc_ringworld_tech_damaged
-					is_planet_class = pc_ringworld_seam
-					is_planet_class = pc_ringworld_seam_damaged
-					is_planet_class = pc_habitat
-				}
-			}
+			#custom_tooltip = {
+			#	fail_text = "requires_no_existing_megastructure"
+			#	#can_build_megastructure_on_planet = yes
+			#	NOR = {
+			#		has_planet_flag = megastructure
+			#		has_planet_flag = has_megastructure
+			#		solar_system = {
+			#			OR = {
+			#				has_star_flag = ring_world_built
+			#				has_star_flag = ithomes_gate
+			#			}
+			#		}
+			#		is_planet_class = pc_ringworld_habitable
+			#		is_planet_class = pc_ringworld_habitable_damaged
+			#		is_planet_class = pc_ringworld_tech
+			#		is_planet_class = pc_ringworld_tech_damaged
+			#		is_planet_class = pc_ringworld_seam
+			#		is_planet_class = pc_ringworld_seam_damaged
+			#		is_planet_class = pc_habitat
+			#	}
+			#}
 			custom_tooltip = {
 				fail_text = "requires_no_orbital_debris"
 				NOR = {

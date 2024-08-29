@@ -7,6 +7,7 @@ action_invite_to_federation = {
 	requires_alliance_vote = yes
 	diplo_view_acceptance_icon = yes
 	should_notify_all_communications = yes
+	requires_recipient_independence = no
 	AI_acceptance_base_value = -50
 	action_type = positive
 	should_show_auto_accept_message_recipient = yes
@@ -25,7 +26,7 @@ action_invite_to_federation = {
 						is_subject = yes
 					}
 				}
-				has_federation = yes
+				#has_federation = yes
 				is_overlord_to = FROM
 			}
 		}

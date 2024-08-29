@@ -18,6 +18,8 @@
   EMPIRE SIZE BASE raised to 200
 - 添加一条给玩家的buff法令  
   add a edict as buff for player
+- 允许与附庸组建联邦  
+- allow Form Federation with subjects
 
 - 每种舰船研究先进船体科技后将解锁新的强化船体；  
   unlock fortified new ship sections after finished all types Advanced Ship Hulls tech
