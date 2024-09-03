@@ -12,14 +12,14 @@
 	> 允许在黑洞，中子星或者脉冲星周围建造巨型船坞  
     allow build Mega Shipyard above Black Hole、Neutron Star、Pulsar  
 
-- 领袖刷新时间降为1年  
+- 领袖刷新时间降为1年；  
   LEADER POOL REFRESH TIME reduced to 1 year
-- 基础帝国规模增加至200  
+- 基础帝国规模增加至200；  
   EMPIRE SIZE BASE raised to 200
-- 添加一条给玩家的buff法令  
+- 添加一条给玩家的buff法令；  
   add a edict as buff for player
-- 允许与附庸组建联邦  
-- allow Form Federation with subjects
+- 允许与附庸组建联邦；  
+  allow Form Federation with subjects
 
 - 每种舰船研究先进船体科技后将解锁新的强化船体；  
   unlock fortified new ship sections after finished all types Advanced Ship Hulls tech
@@ -36,17 +36,19 @@
   add two empty Starbase Modules for Citadel
 - 为1级星环基地升级添加一个空建筑位；  
   add a enpty Buildings for level 1 Orbital Ring update
+- 阻止事件“过热”摧毁殖民地；  
+  prevent event "Too Hot to Handle" change planet
 
-- 允许唯物和蜂群发现灵能理论  
+- 允许唯物和蜂群发现灵能理论；  
   allow Materialist and Hive "draw" the Psionic Theory
-- 允许基因与义体或灵能共存，并都与蜂巢思维共存  
+- 允许基因与义体或灵能共存，并都与蜂巢思维共存；  
   allow the Ascension Perk Genetics coexist with Cybernetics or Psionics, and all coexist with Hive
-- 宇宙创生与星河卫士和星海监管人解互斥  
+- 宇宙创生与星河卫士和星海监管人解互斥；  
   Cancel mutually exclusive with Cosmogenesis and Defender of the Galaxy or Galactic Custodian
 
-- 添加一个黑洞带碎环遗迹球和裂隙的母星系  
+- 添加一个黑洞带碎环遗迹球和裂隙的母星系；  
   add a home system with Ruined Ring World、Relic Planet and Astral Rift arround Black Hole
-- 参考Ethics and Civics Classic修改了行政效率循环科技，但上限为10层，0帝国规模太bug了  
+- 参考Ethics and Civics Classic修改了行政效率循环科技，但上限为10层，0帝国规模太bug了；  
   revised Administrative Efficiency repeatable tech with reference to Ethics and Civics Classic, but limited to level 10, 0 Empire Size is too IMBA
 - 支持中文  
   English Supported
@@ -66,6 +68,7 @@ common/megastructures/08_mega_art_installation.txt
 common/megastructures/09_interstellar_assembly.txt
 common/megastructures/11_mega_shipyard.txt
 common/megastructures/13_quantum_catapult.txt
+common/megastructures/16_cosmogenesis_world.txt
 common/megastructures/habitats.txt
 ```
 
