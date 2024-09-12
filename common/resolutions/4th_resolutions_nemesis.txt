@@ -85,7 +85,7 @@ resolution_galacticreforms_nominate_custodian = {
 
 	ai_weight = {
 		base = @resolution_weight_normal
-		
+
 		modifier = {
 			factor = 12
 			any_neighbor_country = { is_crisis_faction = yes }

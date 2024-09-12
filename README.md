@@ -36,8 +36,6 @@
   add two empty Starbase Modules for Citadel
 - 为1级星环基地升级添加一个空建筑位；  
   add a enpty Buildings for level 1 Orbital Ring update
-- 阻止事件“过热”摧毁殖民地；  
-  prevent event "Too Hot to Handle" change planet
 
 - 允许唯物和蜂群发现灵能理论；  
   allow Materialist and Hive "draw" the Psionic Theory

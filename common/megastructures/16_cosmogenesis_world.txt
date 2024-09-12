@@ -25,6 +25,8 @@ cosmogenesis_world_0 = {
 			influence = 300
 		}
 	}
+
+	custom_tooltip_requirements = "MEGASTRUCTURE_TOOLTIP_REQUIREMENTS_ONE_PER_COUNTRY"
 	construction_blocks_and_blocked_by = none
 
 	prerequisites = { "tech_cosmogenesis_world" }
