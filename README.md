@@ -41,6 +41,8 @@
   allow Materialist and Hive "draw" the Psionic Theory
 - 允许基因与义体或灵能共存，并都与蜂巢思维共存；  
   allow the Ascension Perk Genetics coexist with Cybernetics or Psionics, and all coexist with Hive
+- 虚拟飞升岗位产出的资源：+200%（每个殖民地-20%）；  
+  Virtuality Traditions' Resources From Jobs: +200% (-20% per Colony)
 - 宇宙创生与星河卫士和星海监管人解互斥；  
   Cancel mutually exclusive with Cosmogenesis and Defender of the Galaxy or Galactic Custodian
 

@@ -6,6 +6,8 @@
   edict_player_buff: "I am the crisis"
   edict_player_buff_desc: "~"
 
+  trait_robot_digital_2_tt: "$trait_robot_digital_1_tt$\nResources From Jobs: §G+200%§! (§R-20%§! per Colony)\nPop Upkeep: §R+0.1§! £energy£ §YEnergy§! per Colony"
+
   CORE_JUGGERNAUT_SECTION_T1X2H8M6P4: "Advanced Carrier Juggernaut"
   CORE_JUGGERNAUT_SECTION_T1X2L8M6P4: "Advanced Artillery Juggernaut"
 
