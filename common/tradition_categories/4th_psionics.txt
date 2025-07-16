@@ -5,13 +5,16 @@ tradition_psionics = {
 
 	potential = {
 		has_utopia = yes
-#		is_gestalt = no
+		#is_gestalt = no
 		NOR = {
 			has_cybernetic_ascension = yes
 			#has_genetic_ascension = yes
 			has_synthetic_ascension = yes
 			is_natural_design_empire = yes
 			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
 		}
 	}
 

@@ -8,15 +8,16 @@ country_event = { #New leaders get Brainslug Trait
 
 	trigger = {
 		has_country_flag = finished_brainslug_chain
-		from.species = {
-			NOT = {
-#				has_leader_flag = beholder
+		from = {
+			NOR = {
+				#has_leader_flag = beholder
 				has_leader_flag = gray_leader
-#				has_trait = leader_trait_governor_oracle
+				#has_trait = leader_trait_governor_oracle
+				leader_class = envoy
 			}
 			species = {
 				NOR = {
-#					has_trait = trait_cybernetic
+					#has_trait = trait_cybernetic
 					has_trait = trait_mechanical
 					has_trait = trait_machine_unit
 					is_species_class = ROBOT
@@ -27,35 +28,57 @@ country_event = { #New leaders get Brainslug Trait
 	}
 
 	immediate = {
-		from = {
-			if = {
-				limit = {
-					species = {
-						NOR = {
-#							has_trait = trait_cybernetic
-							has_trait = trait_mechanical
-							has_trait = trait_machine_unit
-							is_species_class = ROBOT
+		if = {
+			limit = {
+				NOT = { has_origin = origin_evolutionary_predators }
+			}
+			from = {
+				if = {
+					limit = {
+						species = {
+							NOR = {
+								#has_trait = trait_cybernetic
+								has_trait = trait_mechanical
+								has_trait = trait_machine_unit
+								is_species_class = ROBOT
+							}
 						}
+					}
+					random_list = {
+						80 = {
+							#Nothing
+						}
+						20 = {
+							modifier = {
+								factor = 0.5
+								has_ethic = ethic_xenophobe
+							}
+							modifier = {
+								factor = 2
+								has_ethic = ethic_xenophile
+							}
+							add_trait = {
+								trait = leader_trait_brainslug
+							}
+						}
+					}
+					break = yes
+				}
+			}
+		}
+		else = {
+			from = {
+				if = {
+					limit = {
+						is_same_species = root.species
+						NOT = {
+							has_trait = leader_trait_brainslug
+						}
+					}
+					add_trait = {
+						trait = leader_trait_brainslug
 					}
 				}
-				random_list = {
-					80 = {
-						#Nothing
-					}
-					20 = {
-						modifier = {
-							factor = 0.5
-							has_ethic = ethic_xenophobe
-						}
-						modifier = {
-							factor = 2
-							has_ethic = ethic_xenophile
-						}
-						add_trait = leader_trait_brainslug
-					}
-				}
-				break = yes
 			}
 		}
 	}
@@ -74,7 +97,7 @@ country_event = { #Pool leaders get Brainslug Trait
 					NOR = {
 						has_trait = leader_trait_brainslug
 						species = {
-#							has_trait = trait_cybernetic
+							#has_trait = trait_cybernetic
 							has_trait = trait_mechanical
 							has_trait = trait_machine_unit
 							is_species_class = ROBOT
@@ -94,7 +117,9 @@ country_event = { #Pool leaders get Brainslug Trait
 							factor = 2
 							has_ethic = ethic_xenophile
 						}
-						add_trait = leader_trait_brainslug
+						add_trait = {
+							trait = leader_trait_brainslug
+						}
 					}
 				}
 			}

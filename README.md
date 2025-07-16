@@ -14,21 +14,21 @@
 
 - 领袖刷新时间降为1年；  
   LEADER POOL REFRESH TIME reduced to 1 year
-- 基础帝国规模增加至200；  
-  EMPIRE SIZE BASE raised to 200
+- ~~基础帝国规模增加至200；~~  
+  ~~EMPIRE SIZE BASE raised to 200~~
 - 添加一条给玩家的buff法令；  
   add a edict as buff for player
 - 允许与附庸组建联邦；  
   allow Form Federation with subjects
 
-- 每种舰船研究先进船体科技后将解锁新的强化船体；  
-  unlock fortified new ship sections after finished all types Advanced Ship Hulls tech
-- 添加强化巨像和主宰的科技，完成后将解锁强化船体；  
-  add fortified colossus and juggernaut tech, after finished will unlock fortified new ship sections
+- ~~每种舰船研究先进船体科技后将解锁新的强化船体；~~  
+  ~~unlock fortified new ship sections after finished all types Advanced Ship Hulls tech~~
+- ~~添加强化巨像和主宰的科技，完成后将解锁强化船体；~~  
+  ~~add fortified colossus and juggernaut tech, after finished will unlock fortified new ship sections~~
 - 巨像和主宰上限提升至2，每1000海军容量增加1；  
   colossus and juggernaut ships limit raised to 2, every 1000 Naval Capacity increases 1
-- 允许设计工程船、殖民船、科研船、运输舰；  
-  allow design Construction Ships、Colonizer Ships、Science Ships、Transport Ships
+- ~~允许设计工程船、殖民船、科研船、运输舰；~~  
+  ~~allow design Construction Ships、Colonizer Ships、Science Ships、Transport Ships~~
 - 为民用船添加一个加力燃烧室模块  
   add a afterburner for civilian ships
 

@@ -20,6 +20,9 @@ agenda_mind_over_matter = {
 			has_synthetic_ascension = yes
 			is_natural_design_empire = yes
 			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
 		}
 		NAND = {
 			has_technology = tech_psionic_theory
@@ -74,6 +77,9 @@ agenda_psionic_supremacy = {
 			has_synthetic_ascension = yes
 			is_natural_design_empire = yes
 			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
 		}
 		NOR = {
 			has_country_flag = composer_covenant_confirmed
@@ -83,7 +89,7 @@ agenda_psionic_supremacy = {
 		}
 	}
 	modifier = {
-		planet_psionic_jobs_produces_mult = 0.05
+		psionic_pop_bonus_workforce_mult = 0.05
 		category_psionics_research_speed_mult = 0.1
 	}
 	finish_modifier = agenda_psionic_supremacy_finish_no_covenant
@@ -114,44 +120,87 @@ agenda_engineered_evolution = {
 		}
 	}
 	effect = {
-		inverted_switch = {
-			trigger = has_technology
-			tech_genome_mapping = {
-				add_tech_progress = {
-					tech = tech_genome_mapping
-					progress = @agenda_award_tech_progress
+		if = {
+			limit = {
+				is_wilderness_empire = no
+			}
+			inverted_switch = {
+				trigger = has_technology
+				tech_genome_mapping = {
+					add_tech_progress = {
+						tech = tech_genome_mapping
+						progress = @agenda_award_tech_progress
+					}
+				}
+				tech_gene_tailoring = {
+					add_tech_progress = {
+						tech = tech_gene_tailoring
+						progress = @agenda_award_tech_progress
+					}
+				}
+				tech_glandular_acclimation = {
+					add_tech_progress = {
+						tech = tech_glandular_acclimation
+						progress = @agenda_award_tech_progress
+					}
+				}
+				tech_gene_expressions = {
+					add_tech_progress = {
+						tech = tech_gene_expressions
+						progress = @agenda_award_tech_progress
+					}
+				}
+				tech_gene_seed_purification = {
+					add_tech_progress = {
+						tech = tech_gene_seed_purification
+						progress = @agenda_award_tech_progress
+					}
+				}
+				default = {
+					add_monthly_resource_mult = {
+						resource = society_research
+						value = @tier3researchreward
+						min = @tier3researchmin
+						max = @tier3researchmax
+					}
 				}
 			}
-			tech_gene_tailoring = {
-				add_tech_progress = {
-					tech = tech_gene_tailoring
-					progress = @agenda_award_tech_progress
+		}
+		# Wilderness can't get Gene Seed Purification, so it gets swapped out for them
+		else = {
+			inverted_switch = {
+				trigger = has_technology
+				tech_genome_mapping = {
+					add_tech_progress = {
+						tech = tech_genome_mapping
+						progress = @agenda_award_tech_progress
+					}
 				}
-			}
-			tech_glandular_acclimation = {
-				add_tech_progress = {
-					tech = tech_glandular_acclimation
-					progress = @agenda_award_tech_progress
+				tech_gene_tailoring = {
+					add_tech_progress = {
+						tech = tech_gene_tailoring
+						progress = @agenda_award_tech_progress
+					}
 				}
-			}
-			tech_gene_expressions = {
-				add_tech_progress = {
-					tech = tech_gene_expressions
-					progress = @agenda_award_tech_progress
+				tech_glandular_acclimation = {
+					add_tech_progress = {
+						tech = tech_glandular_acclimation
+						progress = @agenda_award_tech_progress
+					}
 				}
-			}
-			tech_gene_seed_purification = {
-				add_tech_progress = {
-					tech = tech_gene_seed_purification
-					progress = @agenda_award_tech_progress
+				tech_gene_expressions = {
+					add_tech_progress = {
+						tech = tech_gene_expressions
+						progress = @agenda_award_tech_progress
+					}
 				}
-			}
-			default = {
-				add_monthly_resource_mult = {
-					resource = society_research
-					value = @tier3researchreward
-					min = @tier3researchmin
-					max = @tier3researchmax
+				default = {
+					add_monthly_resource_mult = {
+						resource = society_research
+						value = @tier3researchreward
+						min = @tier3researchmin
+						max = @tier3researchmax
+					}
 				}
 			}
 		}
@@ -165,6 +214,7 @@ agenda_genetic_pursuit = {
 	}
 	potential = {
 		has_utopia = yes
+		has_biogenesis_dlc = no
 		is_machine_empire = no
 		NOR = {
 			#has_cybernetic_ascension = yes
@@ -176,8 +226,8 @@ agenda_genetic_pursuit = {
 	}
 	modifier = {
 		category_biology_research_speed_mult = 0.05
-		pop_growth_speed = 0.025
-		planet_pop_assembly_organic_mult = 0.025
+		logistic_growth_mult = 0.025
+		bonus_pop_growth_mult = 0.025
 	}
 	finish_modifier = agenda_genetic_pursuit_finish
 }
@@ -199,11 +249,14 @@ agenda_cybernetic_advantage = {
 			has_synthetic_ascension = yes
 			is_natural_design_empire = yes
 			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
 		}
 	}
 	modifier = {
 		planet_pops_cyborgs_upkeep_mult = -0.05
-		pop_growth_speed = 0.025
+		logistic_growth_mult = 0.025
 	}
 	finish_modifier = agenda_cybernetic_advantage_finish
 }
@@ -229,6 +282,9 @@ agenda_flesh_is_weak = {
 			has_synthetic_ascension = yes
 			is_natural_design_empire = yes
 			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
 		}
 		NAND = {
 			has_technology = tech_powered_exoskeletons
@@ -287,6 +343,9 @@ agenda_organo_machine_interfacing = {
 			has_synthetic_ascension = yes
 			is_natural_design_empire = yes
 			is_individual_machine = yes
+			has_purity_ascension = yes
+			has_cloning_ascension = yes
+			has_mutation_ascension = yes
 		}
 		NAND = {
 			has_technology = tech_powered_exoskeletons

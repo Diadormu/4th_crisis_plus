@@ -26,6 +26,7 @@ resolution_galacticreforms_nominate_custodian = {
 			NOR = {
 				has_ascension_perk = ap_become_the_crisis
 				#has_ascension_perk = ap_cosmogenesis
+				has_ascension_perk = ap_behemoths
 				has_valid_civic = civic_pompous_purists
 			}
 		}
@@ -173,6 +174,12 @@ resolution_galacticreforms_nominate_custodian = {
 			factor = 20
 			has_global_flag = war_in_heaven_ongoing
 			desc = gal_com_ongoing_war_in_heaven
+		}
+
+		modifier = {
+			factor = 0
+			has_country_flag = fallen_empire_hive_control
+			desc = gal_com_is_awakened_empire
 		}
 	}
 }

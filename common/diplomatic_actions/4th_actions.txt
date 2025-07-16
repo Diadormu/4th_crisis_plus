@@ -61,8 +61,8 @@ action_invite_to_federation = {
 				is_country_type = default
 			}
 			custom_tooltip = {
-				fail_text = requires_tradition_the_federation
-				has_tradition = tr_diplomacy_the_federation
+				fail_text = requires_tech_federation_code
+				has_technology = tech_federation_code
 			}
 		}
 		custom_tooltip = {
@@ -162,6 +162,15 @@ action_invite_to_federation = {
 					trust = {
 						who = root
 						value >= 30
+					}
+				}
+				AND = {
+					has_valid_civic = civic_hive_familiar_face
+					from = {
+						trust = {
+							who = root
+							value >= 15
+						}
 					}
 				}
 			}

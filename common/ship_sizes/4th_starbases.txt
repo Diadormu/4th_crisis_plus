@@ -11,10 +11,6 @@ starbase_citadel = {
 		starbase_module_capacity_add = 8
 		starbase_building_capacity_add = 4
 		starbase_defense_platform_capacity_add = 15
-		#trade system
-		starbase_trade_collection_range_add = 1
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 32
 		ship_sensor_range_add = 1
 	}
 	ship_modifier = {
@@ -24,9 +20,32 @@ starbase_citadel = {
 	max_hitpoints = 80000
 	base_buildtime = 1440
 	resources = {
-		category = starbase_stations
+		category = starbases
 		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
 			alloys = 3500
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 3500
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 3500
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		upkeep = {
@@ -54,6 +73,7 @@ starbase_citadel = {
 	components_add_to_cost = no
 	can_disable = yes
 	flip_control_on_disable = yes
+	available_to_everyone = yes
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser

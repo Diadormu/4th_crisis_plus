@@ -16,8 +16,27 @@ think_tank_0 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 5000
 			unity = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 5000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 5000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		upkeep = {
@@ -173,8 +192,27 @@ think_tank_1 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
 			unity = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		upkeep = {
@@ -209,8 +247,27 @@ think_tank_2 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
 			unity = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		upkeep = {
@@ -245,8 +302,27 @@ think_tank_3 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
 			unity = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		upkeep = {
@@ -358,8 +434,27 @@ think_tank_restored = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 15000
 			unity = 3200
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		upkeep = {

@@ -1,3 +1,7 @@
+# ##################
+# Psionics
+# ##################
+
 #Psionic Theory
 tech_psionic_theory = {
 	cost = @tier3cost1
@@ -12,7 +16,7 @@ tech_psionic_theory = {
 
 	potential = {
 		OR = { #The OR is so that Gestalts can get Zro Distillation with that Resolution
-			NOT = { has_authority = auth_machine_intelligence }
+			#NOT = { has_ethic = ethic_gestalt_consciousness }
 			is_active_resolution = resolution_galacticstudies_extradimensional_experimentation
 			has_relic = r_zro_crystal
 		}
@@ -60,18 +64,18 @@ tech_psionic_theory = {
 		}
 		modifier = {
 			factor = 2
-			any_owned_pop = {
-				pop_has_trait = trait_psionic
+			any_owned_pop_group = {
+				pop_group_has_trait = trait_psionic
 			}
 		}
 		modifier = {
 			factor = 1.25
-			any_owned_pop = {
-				pop_has_trait = trait_latent_psionic
+			any_owned_pop_group = {
+				pop_group_has_trait = trait_latent_psionic
 			}
 			NOT = {
-				any_owned_pop = {
-					pop_has_trait = trait_psionic
+				any_owned_pop_group = {
+					pop_group_has_trait = trait_psionic
 				}
 			}
 		}
@@ -89,10 +93,10 @@ tech_psionic_theory = {
 				NOR = {
 					has_tier1or2or3_in_council = { TRAIT = leader_trait_expertise_psionics }
 					has_councilor = { COUNCILOR = "councilor_shroudwalker_teacher" }
-					any_owned_pop = {
+					any_owned_pop_group = {
 						OR = {
-							pop_has_trait = trait_psionic
-							pop_has_trait = trait_latent_psionic
+							pop_group_has_trait = trait_psionic
+							pop_group_has_trait = trait_latent_psionic
 						}
 					}
 				}

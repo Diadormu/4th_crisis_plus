@@ -567,17 +567,17 @@ lost_temple = {
 		flags = { ruined_orbital_ring_planet }
 		init_effect = {
 			set_name = "lost_temple_NAME"
-			clear_deposits = yes
+			#clear_deposits = yes
 			save_event_target_as = ruined_orbital_ring_planet
 			save_global_event_target_as = mechanocalibrator_planet
-			add_deposit = d_relic_dense_ruins
-			add_deposit = d_collapsed_spire
-			add_deposit = d_collapsed_spire
-			add_deposit = d_massive_crevice
-			add_deposit = d_shattered_solar_array
-			add_deposit = d_flooded_reactor_pits
-			add_deposit = d_crumbling_mining_tunnels
-			add_deposit = d_relic_metal_boneyard
+			relic_world_deposits = yes
+			#add_deposit = d_relic_dense_ruins
+			#add_deposit = d_collapsed_spire
+			#add_deposit = d_massive_crevice
+			#add_deposit = d_shattered_solar_array
+			#add_deposit = d_flooded_reactor_pits
+			#add_deposit = d_crumbling_mining_tunnels
+			#add_deposit = d_relic_metal_boneyard
 		}
 	}
 

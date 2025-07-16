@@ -14,6 +14,26 @@ matter_decompressor_0 = {
 			alloys = 5000
 			unity = 5000
 		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 5000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 5000
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 
 		upkeep = {
 			energy = 5
@@ -48,14 +68,14 @@ matter_decompressor_0 = {
 				}
 			}
 		}
-#		custom_tooltip = {
-#			fail_text = "requires_no_habitable_planets"
-#			NOT = {
-#				any_system_planet = {
-#					colonizable_planet = yes
-#				}
-#			}
-#		}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_habitable_planets"
+		#	NOT = {
+		#		any_system_planet = {
+		#			colonizable_planet = yes
+		#		}
+		#	}
+		#}
 		custom_tooltip = {
 			fail_text = "requires_black_hole"
 			is_star_class = sc_black_hole
@@ -159,6 +179,26 @@ matter_decompressor_1 = {
 			alloys = 12500
 			unity = 5000
 		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 12500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 12500
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 12500
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 
 		produces = {
 			minerals = 500
@@ -193,8 +233,27 @@ matter_decompressor_2 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 12500
 			unity = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 12500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 12500
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 12500
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		produces = {
@@ -229,8 +288,27 @@ matter_decompressor_3 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 12500
 			unity = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 12500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 12500
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 12500
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		produces = {
@@ -266,8 +344,27 @@ matter_decompressor_4 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 12500
 			unity = 5000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 12500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 12500
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 12500
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		produces = {
@@ -340,8 +437,27 @@ matter_decompressor_restored = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 20000
 			unity = 7500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 20000
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 20000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 20000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		produces = {
