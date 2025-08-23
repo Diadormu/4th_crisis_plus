@@ -2,6 +2,9 @@
 @ascension_agenda_cost = 3500		# Same as short_agenda_cost from traditions
 @ascension_agenda_cooldown = 1080	# 3 Years
 
+@ascension_tech_agenda_weight = 100
+@ascension_agenda_weight = 50
+
 agenda_mind_over_matter = {
 	agenda_cost = value:agenda_mind_over_matter_cost
 	agenda_cooldown = @ascension_agenda_cooldown
@@ -61,6 +64,9 @@ agenda_mind_over_matter = {
 			}
 		}
 	}
+	ai_weight = {
+		base = @ascension_tech_agenda_weight
+	}
 }
 
 agenda_psionic_supremacy = {
@@ -93,6 +99,9 @@ agenda_psionic_supremacy = {
 		category_psionics_research_speed_mult = 0.1
 	}
 	finish_modifier = agenda_psionic_supremacy_finish_no_covenant
+	ai_weight = {
+		base = @ascension_agenda_weight
+	}
 }
 
 agenda_engineered_evolution = {
@@ -205,6 +214,9 @@ agenda_engineered_evolution = {
 			}
 		}
 	}
+	ai_weight = {
+		base = @ascension_tech_agenda_weight
+	}
 }
 
 agenda_genetic_pursuit = {
@@ -230,6 +242,9 @@ agenda_genetic_pursuit = {
 		bonus_pop_growth_mult = 0.025
 	}
 	finish_modifier = agenda_genetic_pursuit_finish
+	ai_weight = {
+		base = @ascension_agenda_weight
+	}
 }
 
 agenda_cybernetic_advantage = {
@@ -259,6 +274,9 @@ agenda_cybernetic_advantage = {
 		logistic_growth_mult = 0.025
 	}
 	finish_modifier = agenda_cybernetic_advantage_finish
+	ai_weight = {
+		base = @ascension_agenda_weight
+	}
 }
 
 agenda_flesh_is_weak = {
@@ -323,6 +341,9 @@ agenda_flesh_is_weak = {
 			}
 		}
 	}
+	ai_weight = {
+		base = @ascension_tech_agenda_weight
+	}
 }
 
 agenda_organo_machine_interfacing = {
@@ -383,5 +404,8 @@ agenda_organo_machine_interfacing = {
 				}
 			}
 		}
+	}
+	ai_weight = {
+		base = @ascension_tech_agenda_weight
 	}
 }
