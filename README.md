@@ -45,6 +45,8 @@
   Virtuality Traditions' Resources From Jobs: +200% (-20% per Colony)
 - 宇宙创生与星河卫士和星海监管人解互斥；  
   Cancel mutually exclusive with Cosmogenesis and Defender of the Galaxy or Galactic Custodian
+- 允许生体荒野选择机械舰船和宇宙创生；  
+  allow Wilderness select Mechanical Ships and Cosmogenesis
 
 - 添加一个黑洞带碎环遗迹球和裂隙的母星系；  
   add a home system with Ruined Ring World、Relic Planet and Astral Rift arround Black Hole
