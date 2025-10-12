@@ -32,6 +32,11 @@ origin_wilderness = {
 				value = civic_hive_guided_sapience
 				value = civic_astrometeorology_hive
 				value = civic_environmental_architects_hive
+				value = civic_entropy_drinkers_hive_mind
+				value = civic_hive_superstitious_beliefs
+				value = civic_twisted_experimenters_hive_mind
+				value = civic_hive_chosen
+				value = civic_entropy_drinkers_hive_mind
 			}
 		}
 	}

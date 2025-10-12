@@ -30,6 +30,11 @@ action_invite_to_federation = {
 				is_overlord_to = FROM
 			}
 		}
+		hidden_trigger = {
+			NOT = {
+				has_origin = origin_endbringers
+			}
+		}
 	}
 
 	possible = {
@@ -215,6 +220,17 @@ action_invite_to_federation = {
 				OR = {
 					is_galactic_community_member = yes
 					from = { is_galactic_community_member = yes }
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		hidden_effect = {
+			country_event = { # Patron Objective Counter: po_establish_diplomatic_pact
+				id = shroud.10400
+				scopes = {
+					from = from
 				}
 			}
 		}
