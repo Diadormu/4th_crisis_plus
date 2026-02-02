@@ -107,14 +107,14 @@ ap_engineered_evolution = {
 			#has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
-			has_origin = origin_endbringers
+			#has_origin = origin_endbringers
 		}
 		is_mechanical_empire = no
 		is_individual_machine = no
 		#is_cyborg_empire = no
 		is_natural_design_empire = no
-		NOT = { has_valid_civic = civic_augmentation_bazaars }
-		is_chosen_empire = no
+		#NOT = { has_valid_civic = civic_augmentation_bazaars }
+		#is_chosen_empire = no
 		is_entropy_drinkers_empire = no
 	}
 
@@ -233,10 +233,10 @@ ap_organo_machine_interfacing = {
 			fail_text = "requires_ascension_perks_2"
 			num_ascension_perks > 1
 		}
-		custom_tooltip = {
-			fail_text = "requires_not_ap_engineered_evolution"
-			NOT = { has_ascension_perk = ap_engineered_evolution }
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_not_ap_engineered_evolution"
+		#	NOT = { has_ascension_perk = ap_engineered_evolution }
+		#}
 		if = {
 			limit = { has_shroud_dlc = yes }
 			custom_tooltip = {
@@ -414,6 +414,7 @@ ap_synthetic_evolution = {
 			has_origin = origin_synthetic_fertility
 			has_origin = origin_evolutionary_predators
 			has_origin = origin_endbringers
+			has_tradition = tr_cybernetics_adopt
 		}
 		#is_gestalt = no
 		is_mechanical_empire = no
@@ -424,6 +425,7 @@ ap_synthetic_evolution = {
 			NOT = { has_trait = trait_unplugged_decyberized }
 		}
 		is_chosen_empire = no
+		is_galvanic_empire = no
 		is_entropy_drinkers_empire = no
 	}
 
@@ -462,9 +464,9 @@ ap_mind_over_matter = {
 		}
 		if = {
 			limit = {
-				OR = { 
+				OR = {
 					is_synthetic_empire = no
-					has_origin = origin_shroud_forged 
+					has_origin = origin_shroud_forged
 					is_chosen_empire = yes
 				}
 			}
@@ -497,7 +499,10 @@ ap_mind_over_matter = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_not_ap_organo_machine_interfacing"
-			NOT = { has_ascension_perk = ap_organo_machine_interfacing_assimilator }
+			NOR = {
+				has_ascension_perk = ap_organo_machine_interfacing
+				has_ascension_perk = ap_organo_machine_interfacing_assimilator
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_free_tradition_tree"
@@ -525,7 +530,7 @@ ap_mind_over_matter = {
 					always = no
 				}
 			}
-			else = {	
+			else = {
 				custom_tooltip = {
 					fail_text = "shroud_forged_liberation_acquired"
 					NOT = { has_country_flag = finish_shroud_forged_liberation_flag }
@@ -543,10 +548,10 @@ ap_mind_over_matter = {
 			has_country_flag = ratling_country
 			has_ascension_perk = ap_mind_over_matter
 			has_origin = origin_shroudwalker_apprentice
-			has_origin = origin_cybernetic_creed
+			#has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
 			has_origin = origin_evolutionary_predators
-			has_origin = origin_wilderness
+			#has_origin = origin_wilderness
 			has_valid_civic = civic_augmentation_bazaars
 			has_origin = origin_mindwardens
 			has_origin = origin_endbringers
@@ -556,13 +561,15 @@ ap_mind_over_matter = {
 			AND = {
 				#is_gestalt = no
 				is_mechanical_empire = no
-				#OR = {
+				OR = {
 					is_cyborg_empire = no
-				#	AND = {
+					AND = {
+						is_cyborg_empire = yes
+						has_origin = origin_cybernetic_creed
 				#		has_origin = origin_unplugged
 				#		NOT = { has_country_flag = is_cyberized }
-				#	}
-				#}
+					}
+				}
 				is_individual_machine = no
 			}
 		}
@@ -573,11 +580,29 @@ ap_mind_over_matter = {
 		}
 	}
 
+	tradition_swap = {
+		name = ap_interdimensional_processing
+		inherit_name = no
+		inherit_icon = no
+		inherit_effects = yes
+		trigger = {
+			has_shroud_dlc = yes
+			is_synthetic_empire = yes
+		}
+		weight = { factor = 1 }
+	}
+
 	ai_weight = {
 		factor = @ascension_path_base_weight
 		modifier = {
 			factor = @ascension_path_synergy_weight
-			has_mind_over_matter_synergy = yes
+			OR = {
+				has_mind_over_matter_synergy = yes
+				any_country = {
+					has_origin = origin_mindwardens
+					NOT = { is_same_value = prev }
+				}
+			}
 		}
 		modifier = {
 			factor = @ascension_path_synergy_weight
@@ -669,13 +694,13 @@ ap_synthetic_age = {
 			factor = @ascension_path_anti_synergy_weight
 			has_synthetic_age_anti_synergy = yes
 		}
-	}
 		modifier = {
 			factor = @ascension_path_mindwardens_present
 			any_country = {
 				has_origin = origin_mindwardens
 			}
 		}
+	}
 }
 
 #################################

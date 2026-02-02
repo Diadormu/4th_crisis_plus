@@ -80,6 +80,7 @@ ap_defender_of_the_galaxy = {
 			has_ascension_perk = ap_become_the_crisis
 			#has_ascension_perk = ap_cosmogenesis
 			has_ascension_perk = ap_behemoths
+			has_ascension_perk = ap_galactic_hyperthermia
 			has_origin = origin_endbringers # Endbringers are technically a crisis as well
 		}
 	}
@@ -95,10 +96,7 @@ ap_defender_of_the_galaxy = {
 						who = prev
 						value > equivalent
 					}
-					OR = {
-						has_ascension_perk = ap_become_the_crisis
-						has_ascension_perk = ap_cosmogenesis
-					}
+					is_player_crisis = yes
 				}
 			}
 		}
@@ -111,8 +109,7 @@ ap_defender_of_the_galaxy = {
 				has_valid_civic = civic_hive_familiar_face
 				any_country = {
 					OR = {
-						has_crisis_level = crisis_level_5
-						has_crisis_level = crisis_cosmogenesis_level_5
+						is_level_5_player_crisis = yes
 						is_crisis_faction = yes
 					}
 				}
@@ -130,8 +127,7 @@ ap_defender_of_the_galaxy = {
 			NOT = {
 				any_country = {
 					OR = {
-						has_crisis_level = crisis_level_5
-						has_crisis_level = crisis_cosmogenesis_level_5
+						is_level_5_player_crisis = yes
 						is_crisis_faction = yes
 					}
 				}
