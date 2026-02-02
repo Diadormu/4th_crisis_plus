@@ -32,7 +32,7 @@ grand_archive_0 = {
 		}
 	}
 
-	construction_blocks_and_blocked_by = self_type
+	construction_blocks_and_blocked_by = none
 	prerequisites = { "tech_galactic_archivism" }
 	show_prereqs = yes
 
