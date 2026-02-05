@@ -41,8 +41,8 @@
   allow Materialist and Hive "draw" the Psionic Theory
 - 允许基因与义体或灵能共存，并都与蜂巢思维共存；  
   allow the Ascension Perk Genetics coexist with Cybernetics or Psionics, and all coexist with Hive
-- 允许义体信条或生体荒野与灵能共存；  
-  allow the origin Cybernetic Creed or Wilderness coexist with Psionics
+- 允许义体信条或生体荒野与灵能共存，允许虚境铸就与跨维度运算共存；  
+  allow the origin Cybernetic Creed or Wilderness coexist with Psionics, allow the origin Shroud-Forged coexist with Interdimensional Processing
 - 虚拟飞升岗位产出的资源：+200%（每个殖民地-20%）；  
   Virtuality Traditions' Resources From Jobs: +200% (-20% per Colony)
 - 宇宙创生与星河卫士和星海监管人解互斥；  
