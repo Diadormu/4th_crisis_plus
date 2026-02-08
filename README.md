@@ -52,6 +52,8 @@
 
 - 添加一个黑洞带碎环遗迹球和裂隙的母星系；  
   add a home system with Ruined Ring World、Relic Planet and Astral Rift arround Black Hole
+  > 允许拆除被毁的以太相引擎框架  
+    allow dismantle Ruined Aetherophasic Engine Frame
 - 参考Ethics and Civics Classic修改了行政效率循环科技，但上限为10层，0帝国规模太bug了；  
   revised Administrative Efficiency repeatable tech with reference to Ethics and Civics Classic, but limited to level 10, 0 Empire Size is too IMBA
 - 支持中文  

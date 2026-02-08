@@ -1,0 +1,32 @@
+# Ruined Crisis Engine
+crisis_sphere_ruined = {
+	entity = "dyson_sphere_destroyed_entity"
+	portrait = "GFX_megastructure_construction_background"
+
+	potential = {
+		always = no
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 3000
+		}
+	}
+	dismantle_time = 720
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		can_dismantle_megastructure = {
+			TECH = tech_mega_engineering
+		}
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				alloys = 2000
+				sr_dark_matter = 1000
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
+	}
+}
