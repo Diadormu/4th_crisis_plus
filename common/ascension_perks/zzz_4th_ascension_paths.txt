@@ -416,7 +416,7 @@ ap_synthetic_evolution = {
 			has_origin = origin_endbringers
 			has_tradition = tr_cybernetics_adopt
 		}
-		#is_gestalt = no
+		is_gestalt = no
 		is_mechanical_empire = no
 		is_natural_design_empire = no
 		NOT = { has_valid_civic = civic_augmentation_bazaars }
