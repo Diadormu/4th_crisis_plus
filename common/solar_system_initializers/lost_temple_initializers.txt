@@ -635,7 +635,6 @@ lost_temple = {
 	change_orbit = 50
 	planet = {
 		class = pc_astral_scar
-		spawn_beyond_gravity_well = yes
 		orbit_distance = 0
 		orbit_angle = random
 		size = 20

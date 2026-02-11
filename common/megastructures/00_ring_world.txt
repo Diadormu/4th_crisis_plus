@@ -129,7 +129,9 @@ ring_world_1 = {
 		#阻止AI建造多个
 		modifier = {
 			factor = 0
-			has_country_flag = has_ring_world
+			FROM = {
+				has_country_flag = has_ring_world
+			}
 		}
 	}
 
