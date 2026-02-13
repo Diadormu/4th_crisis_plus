@@ -249,6 +249,8 @@ ap_world_shaper = {
 
 	on_enabled = {
 		custom_tooltip = "allow_gaia"
+		custom_tooltip = "crisobj_create_volcanics_desc"
+		set_country_flag = allow_terraforming_into_volcanic
 	}
 
 	potential = {
