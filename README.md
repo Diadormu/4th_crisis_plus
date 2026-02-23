@@ -63,21 +63,5 @@
 
 **由于修改了部分巨构、星环基地、恒星基地、舰船类型相关文件，所以与所有类似mod冲突，如果要使本mod生效必须将它排在它们下面**  
 **because of modifyed some megastructures\orbital rings\starbases\ship sizes files, it conflicts with all similar mods, if want this mod to work, must place it below them**  
-已修改的原始文件：
-modifyed original files:  
-```
-common/megastructures/00_ring_world.txt
-common/megastructures/01_dyson_sphere.txt
-common/megastructures/02_spy_orb.txt
-common/megastructures/03_think_tank.txt
-common/megastructures/06_matter_decompressor.txt
-common/megastructures/07_strategic_coordination_center.txt
-common/megastructures/08_mega_art_installation.txt
-common/megastructures/09_interstellar_assembly.txt
-common/megastructures/11_mega_shipyard.txt
-common/megastructures/13_quantum_catapult.txt
-common/megastructures/16_cosmogenesis_world.txt
-common/megastructures/habitats.txt
-```
 
 [⭐Github🌟](https://github.com/Diadormu/4th_crisis_plus)
