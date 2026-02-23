@@ -29,6 +29,9 @@ lost_temple = {
 		orbit_distance = -1
 
 		init_effect = {
+			clear_deposits = yes
+			add_deposit = d_energy_10
+			add_deposit = d_minerals_10
 			create_ambient_object = {
 				type = "large_debris_object"
 				entity_offset_height = { min = -0 max = -20 }
@@ -603,12 +606,10 @@ lost_temple = {
 			size = 4
 			init_effect = {
 				set_name = "NAME_MOON_MOSS"
-				add_deposit = d_energy_5
-				add_deposit = d_minerals_5
-				add_deposit = d_alloys_3
-				add_deposit = d_volatile_motes_2
-				add_deposit = d_exotic_gases_2
-				add_deposit = d_rare_crystals_2
+				add_deposit = d_alloys_5
+				add_deposit = d_volatile_motes_3
+				add_deposit = d_exotic_gases_3
+				add_deposit = d_rare_crystals_3
 				add_deposit = d_living_metal_deposit
 			}
 
