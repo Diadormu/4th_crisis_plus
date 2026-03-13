@@ -20,49 +20,50 @@ update_leader_after_modification = {
 				is_robotic_species = no
 			}
 			species = {
-				switch = {
-					trigger = has_trait
-					trait_erudite = {
-						prev = {
-							add_trait = {
-								trait = leader_trait_erudite
-								show_message = no
-							}
+				if = {
+					limit = { has_trait = trait_erudite }
+					prev = {
+						add_trait = {
+							trait = leader_trait_erudite
+							show_message = no
 						}
 					}
-					trait_cybernetic = {
-						prev = {
-							add_trait = {
-								trait = leader_trait_cyborg
-								show_message = no
-							}
-							if = {
-								limit = {
-									owner = {
-										has_country_flag = firewall_built
-									}
-								}
-								add_trait = {
-									trait = leader_trait_firewalled
-									show_message = no
+				}
+				if = {
+					limit = { has_trait = trait_cybernetic }
+					prev = {
+						add_trait = {
+							trait = leader_trait_cyborg
+							show_message = no
+						}
+						if = {
+							limit = {
+								owner = {
+									has_country_flag = firewall_built
 								}
 							}
-						}
-					}
-					trait_limited_cybernetic = {
-						prev = {
 							add_trait = {
-								trait = leader_trait_limited_cyborg
+								trait = leader_trait_firewalled
 								show_message = no
 							}
 						}
 					}
-					trait_psionic = {
-						prev = {
-							add_trait = {
-								trait = leader_trait_psionic
-								show_message = no
-							}
+				}
+				if = {
+					limit = { has_trait = trait_limited_cybernetic }
+					prev = {
+						add_trait = {
+							trait = leader_trait_limited_cyborg
+							show_message = no
+						}
+					}
+				}
+				if = {
+					limit = { has_trait = trait_psionic }
+					prev = {
+						add_trait = {
+							trait = leader_trait_psionic
+							show_message = no
 						}
 					}
 				}
@@ -79,7 +80,7 @@ update_leader_after_modification = {
 				show_message = no
 			}
 		}
-		else_if = {
+		if = {
 			limit = {
 				species = {
 					has_virtual_species_trait = yes
@@ -90,21 +91,19 @@ update_leader_after_modification = {
 				show_message = no
 			}
 		}
-		else = {
-			if = {
-				limit = {
-					owner = {
-						OR = {
-							is_synthetic_empire = yes
-							has_tradition = tr_synthetics_finish
-							has_tradition = tr_modularity_finish
-						}
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						is_synthetic_empire = yes
+						has_tradition = tr_synthetics_finish
+						has_tradition = tr_modularity_finish
 					}
 				}
-				add_trait = {
-					trait = leader_trait_synthetic
-					show_message = no
-				}
+			}
+			add_trait = {
+				trait = leader_trait_synthetic
+				show_message = no
 			}
 		}
 	}

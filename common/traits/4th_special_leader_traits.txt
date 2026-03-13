@@ -78,8 +78,8 @@ leader_trait_erudite = {
 	}
 	leader_class = { commander scientist official }
 	opposites = {
-		leader_trait_cyborg
-		leader_trait_limited_cyborg
+		#leader_trait_cyborg
+		#leader_trait_limited_cyborg
 		leader_trait_synthetic
 	}
 	initial = no
@@ -186,7 +186,7 @@ leader_trait_cyborg = {
 	}
 	leader_class = { commander scientist official }
 	opposites = {
-		leader_trait_erudite
+		#leader_trait_erudite
 		leader_trait_chosen
 		leader_trait_limited_cyborg
 		leader_trait_psionic

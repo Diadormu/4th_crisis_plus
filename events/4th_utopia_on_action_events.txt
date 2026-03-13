@@ -11,7 +11,7 @@ country_event = {
 			NOT = { leader_class = envoy }
 			species = {
 				has_trait = trait_erudite
-				has_psionic_species_trait = no
+				#has_psionic_species_trait = no
 				#NOT = { has_trait = trait_cybernetic }
 			}
 		}
