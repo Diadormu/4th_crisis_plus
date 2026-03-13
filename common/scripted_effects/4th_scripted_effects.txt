@@ -1,18 +1,111 @@
-#remove_leader_traits_after_modification = {
-#	if = {
-#		limit = {
-#			species = {
-##				OR = {
-#					NOT = { has_trait = trait_erudite }
-##					has_trait = trait_cybernetic
-##					has_trait = trait_psionic
-##					has_trait = trait_latent_psionic
-##				}
-#			}
-#		}
-#		if = {
-#			limit = { has_trait = leader_trait_erudite }
-#			remove_trait = leader_trait_erudite
-#		}
-#	}
-#}
+# Leader scope
+update_leader_after_modification = {
+	if = {
+		limit = {
+			is_leader_tier = leader_tier_default
+			has_any_chosen_one_leader_trait = no
+		}
+		# Remove all applicable leader traits
+		remove_trait = leader_trait_erudite
+		remove_trait = leader_trait_cyborg
+		remove_trait = leader_trait_limited_cyborg
+		remove_trait = leader_trait_firewalled
+		remove_trait = leader_trait_hacked
+		remove_trait = leader_trait_psionic
+		remove_trait = leader_trait_virtual
+		remove_trait = leader_trait_synthetic
+		# Add the correct leader trait based on the species
+		if = {
+			limit = {
+				is_robotic_species = no
+			}
+			species = {
+				switch = {
+					trigger = has_trait
+					trait_erudite = {
+						prev = {
+							add_trait = {
+								trait = leader_trait_erudite
+								show_message = no
+							}
+						}
+					}
+					trait_cybernetic = {
+						prev = {
+							add_trait = {
+								trait = leader_trait_cyborg
+								show_message = no
+							}
+							if = {
+								limit = {
+									owner = {
+										has_country_flag = firewall_built
+									}
+								}
+								add_trait = {
+									trait = leader_trait_firewalled
+									show_message = no
+								}
+							}
+						}
+					}
+					trait_limited_cybernetic = {
+						prev = {
+							add_trait = {
+								trait = leader_trait_limited_cyborg
+								show_message = no
+							}
+						}
+					}
+					trait_psionic = {
+						prev = {
+							add_trait = {
+								trait = leader_trait_psionic
+								show_message = no
+							}
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				species = {
+					has_trait = trait_robot_psionic
+				}
+			}
+			add_trait = {
+				trait = leader_trait_psionic
+				show_message = no
+			}
+		}
+		else_if = {
+			limit = {
+				species = {
+					has_virtual_species_trait = yes
+				}
+			}
+			add_trait = {
+				trait = leader_trait_virtual
+				show_message = no
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							is_synthetic_empire = yes
+							has_tradition = tr_synthetics_finish
+							has_tradition = tr_modularity_finish
+						}
+					}
+				}
+				add_trait = {
+					trait = leader_trait_synthetic
+					show_message = no
+				}
+			}
+		}
+	}
+}
