@@ -117,19 +117,19 @@ dyson_swarm_1 = {
 				}
 			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_no_binary_trinary"
-			is_binary_star = no
-			is_trinary_star = no
-		}
-		custom_tooltip = {
-			fail_text = "requires_no_black_hole_neutron_star_pulsar"
-			NOT = {
-				is_star_class = sc_black_hole
-				is_star_class = sc_neutron_star
-				is_star_class = sc_pulsar
-			}
-		}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_binary_trinary"
+		#	is_binary_star = no
+		#	is_trinary_star = no
+		#}
+		#custom_tooltip = {
+		#	fail_text = "requires_no_black_hole_neutron_star_pulsar"
+		#	NOT = {
+		#		is_star_class = sc_black_hole
+		#		is_star_class = sc_neutron_star
+		#		is_star_class = sc_pulsar
+		#	}
+		#}
 		custom_tooltip = {
 			fail_text = "requires_less_than_x_dyson_swarms"
 			from = {
