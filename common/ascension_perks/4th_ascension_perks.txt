@@ -181,6 +181,10 @@ ap_cosmogenesis = {
 		activate_crisis_progression = cosmogenesis_path
 	}
 
+	modifier = {
+		refugee_attraction = -0.50
+	}
+
 	ai_weight = {
 		factor = 7.5
 		modifier = {

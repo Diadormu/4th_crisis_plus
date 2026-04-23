@@ -25,7 +25,8 @@ tech_psionic_theory = {
 	}
 
 	modifier = {
-		empire_size_pops_mult = -0.10
+		empire_size_pops_mult = -0.05
+		army_morale_damage_taken_mult = -0.10
 	}
 
 	weight_modifier = {

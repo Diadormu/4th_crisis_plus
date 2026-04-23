@@ -7,11 +7,12 @@ constructor = {
 		ship_evasion_add = @construction_evasion
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_4
+	icon = ship_size_constructor
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_constructor
 	base_buildtime = @construction_build_time
 
 	combat_disengage_chance = 1.0
@@ -94,12 +95,13 @@ colonizer = {
 	modifier = {
 		ship_evasion_add = @colony_evasion
 	}
-	size_multiplier = 1
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_colonizer
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_colonizer
 	base_buildtime = @colony_build_time
 
 	combat_disengage_chance = 0.5
@@ -372,12 +374,13 @@ sponsored_colonizer = {
 	modifier = {
 		ship_evasion_add = @colony_evasion
 	}
-	size_multiplier = 1
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_colonizer
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_colonizer
 	base_buildtime = @colony_build_time
 
 	combat_disengage_chance = 0.5
@@ -401,11 +404,11 @@ sponsored_colonizer = {
 	resources = {
 		category = colonies
 		cost = {
-			energy = @colony_cost_high
+			trade = @colony_cost_high
 		}
 
 		upkeep = {
-			energy = @colony_upkeep_energy
+			trade = @colony_upkeep_energy
 			alloys = @colony_upkeep_alloys
 		}
 	}
@@ -442,12 +445,13 @@ lithoid_colonizer = {
 	modifier = {
 		ship_evasion_add = @colony_evasion
 	}
-	size_multiplier = 1
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_colonizer
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_colonizer
 	base_buildtime = 150
 
 	combat_disengage_chance = 0.2
@@ -506,11 +510,12 @@ science = {
 		ship_hyperlane_range_add = 1
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_4
+	icon = ship_size_science
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_science
 	base_buildtime = @science_build_time
 
 	combat_disengage_chance = 2.0
@@ -597,12 +602,12 @@ transport = {
 		ship_evasion_add = @transport_evasion
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_4
+	icon = ship_size_transport
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_transport
-
 	available_to_everyone = yes
 
 	combat_disengage_chance = 1.5
