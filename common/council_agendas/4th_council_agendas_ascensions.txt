@@ -14,7 +14,6 @@ agenda_mind_over_matter = {
 	potential = {
 		if = {
 			limit = { has_shroud_dlc = no }
-			has_utopia = yes
 			is_gestalt = no
 			is_individual_machine = no
 		}
@@ -79,7 +78,6 @@ agenda_psionic_supremacy = {
 		has_tradition = tr_psionics_adopt
 	}
 	potential = {
-		has_utopia = yes
 		has_shroud_dlc = no
 		is_gestalt = no
 		NOR = {
@@ -142,7 +140,6 @@ agenda_engineered_evolution = {
 		has_ascension_perk = ap_engineered_evolution
 	}
 	potential = {
-		has_utopia = yes
 		is_machine_empire = no
 		NOR = {
 			#has_cybernetic_ascension = yes
@@ -256,7 +253,6 @@ agenda_genetic_pursuit = {
 		has_tradition = tr_genetics_adopt
 	}
 	potential = {
-		has_utopia = yes
 		has_biogenesis_dlc = no
 		is_machine_empire = no
 		NOR = {
@@ -284,10 +280,6 @@ agenda_cybernetic_advantage = {
 		has_tradition = tr_cybernetics_adopt
 	}
 	potential = {
-		OR = {
-			has_utopia = yes
-			has_machine_age_dlc = yes
-		}
 		is_machine_empire = no
 		NOR = {
 			#has_genetic_ascension = yes
@@ -320,10 +312,6 @@ agenda_flesh_is_weak = {
 		}
 	}
 	potential = {
-		OR = {
-			has_utopia = yes
-			has_machine_age_dlc = yes
-		}
 		is_gestalt = no
 		NOR = {
 			#has_genetic_ascension = yes
@@ -384,10 +372,6 @@ agenda_organo_machine_interfacing = {
 		has_ascension_perk = ap_organo_machine_interfacing
 	}
 	potential = {
-		OR = {
-			has_utopia = yes
-			has_machine_age_dlc = yes
-		}
 		is_hive_empire = yes
 		NOR = {
 			#has_genetic_ascension = yes

@@ -93,6 +93,15 @@ update_leader_after_modification = {
 		}
 		if = {
 			limit = {
+				owner = { has_country_flag = driven_cybernetics }
+			}
+			add_trait = {
+				trait = leader_trait_cyborg
+				show_message = no
+			}
+		}
+		if = {
+			limit = {
 				owner = {
 					OR = {
 						has_country_flag = synthetic_empire
