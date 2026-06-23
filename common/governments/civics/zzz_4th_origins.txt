@@ -47,6 +47,7 @@ origin_wilderness = {
 				value = pc_volcanic
 			}
 		}
+		is_nomadic = no
 	}
 	advanced_start = yes
 

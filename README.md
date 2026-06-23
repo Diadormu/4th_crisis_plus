@@ -45,8 +45,8 @@
   allow the origin Cybernetic Creed or Wilderness coexist with Psionics, allow the origin Shroud-Forged coexist with Interdimensional Processing
 - 虚拟飞升岗位产出的资源：+200%（每个殖民地-20%）；  
   Virtuality Traditions' Resources From Jobs: +100% (-10% per Colony)
-- 宇宙创生与星河卫士和星海监管人解互斥；  
-  Cancel mutually exclusive with Cosmogenesis and Defender of the Galaxy or Galactic Custodian
+- 宇宙创生与~~星河卫士和~~星海监管人解互斥；  
+  Cancel mutually exclusive with Cosmogenesis and ~~Defender of the Galaxy~~ or Galactic Custodian
 - 允许生体荒野选择机械舰船和宇宙创生；  
   allow Wilderness select Mechanical Ships and Cosmogenesis
 - 允许星球塑形师环境改造行星变为火山星球；  

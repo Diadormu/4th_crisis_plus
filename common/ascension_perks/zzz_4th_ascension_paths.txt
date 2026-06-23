@@ -2,9 +2,9 @@
 # ASCENSION PATHS
 #################
 
-@ascension_path_base_weight = 100
+@ascension_path_base_weight = 500
 @ascension_path_synergy_weight = 2
-@ascension_path_anti_synergy_weight = 0.5
+@ascension_path_anti_synergy_weight = 0.25
 @ascension_path_mindwardens_present = 0.3
 
 # Genetic Ascension  (regular empires & Hive Minds)
@@ -89,6 +89,12 @@ ap_engineered_evolution = {
 	potential = {
 		NOR = {
 			has_ascension_perk = ap_engineered_evolution
+			#has_ascension_perk = ap_the_flesh_is_weak 
+			#has_ascension_perk = ap_organo_machine_interfacing
+			#has_ascension_perk = ap_organo_machine_interfacing_assimilator
+			has_ascension_perk = ap_synthetic_evolution
+			#has_ascension_perk = ap_mind_over_matter
+			has_ascension_perk = ap_synthetic_age
 			is_machine_empire = yes
 			#has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
@@ -166,7 +172,13 @@ ap_the_flesh_is_weak = {
 
 	potential = {
 		NOR = {
-			has_ascension_perk = ap_the_flesh_is_weak
+			#has_ascension_perk = ap_engineered_evolution
+			has_ascension_perk = ap_the_flesh_is_weak 
+			has_ascension_perk = ap_organo_machine_interfacing
+			has_ascension_perk = ap_organo_machine_interfacing_assimilator
+			has_ascension_perk = ap_synthetic_evolution
+			has_ascension_perk = ap_mind_over_matter
+			has_ascension_perk = ap_synthetic_age
 			has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
@@ -192,6 +204,10 @@ ap_the_flesh_is_weak = {
 
 	ai_weight = {
 		factor = @ascension_path_base_weight
+		modifier = {
+			factor = @ascension_path_synergy_weight
+			is_materialist = yes
+		}
 		modifier = {
 			factor = @ascension_path_anti_synergy_weight
 			has_flesh_is_weak_anti_synergy = yes
@@ -235,7 +251,13 @@ ap_organo_machine_interfacing = {
 
 	potential = {
 		NOR = {
+			#has_ascension_perk = ap_engineered_evolution
+			has_ascension_perk = ap_the_flesh_is_weak 
 			has_ascension_perk = ap_organo_machine_interfacing
+			has_ascension_perk = ap_organo_machine_interfacing_assimilator
+			has_ascension_perk = ap_synthetic_evolution
+			has_ascension_perk = ap_mind_over_matter
+			has_ascension_perk = ap_synthetic_age
 			has_origin = origin_evolutionary_predators
 			has_origin = origin_wilderness
 			has_origin = origin_endbringers
@@ -287,7 +309,13 @@ ap_organo_machine_interfacing_assimilator = {
 
 	potential = {
 		NOR = {
+			has_ascension_perk = ap_engineered_evolution
+			has_ascension_perk = ap_the_flesh_is_weak 
+			has_ascension_perk = ap_organo_machine_interfacing
 			has_ascension_perk = ap_organo_machine_interfacing_assimilator
+			has_ascension_perk = ap_synthetic_evolution
+			has_ascension_perk = ap_mind_over_matter
+			has_ascension_perk = ap_synthetic_age
 			has_origin = origin_endbringers
 		}
 		has_civic = civic_machine_assimilator
@@ -377,7 +405,13 @@ ap_synthetic_evolution = {
 
 	potential = {
 		NOR = {
+			has_ascension_perk = ap_engineered_evolution
+			has_ascension_perk = ap_the_flesh_is_weak 
+			has_ascension_perk = ap_organo_machine_interfacing
+			has_ascension_perk = ap_organo_machine_interfacing_assimilator
 			has_ascension_perk = ap_synthetic_evolution
+			has_ascension_perk = ap_mind_over_matter
+			has_ascension_perk = ap_synthetic_age
 			is_machine_empire = yes
 			has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_cybernetic_creed
@@ -515,7 +549,13 @@ ap_mind_over_matter = {
 	potential = {
 		NOR = {
 			has_country_flag = ratling_country
+			#has_ascension_perk = ap_engineered_evolution
+			#has_ascension_perk = ap_the_flesh_is_weak 
+			#has_ascension_perk = ap_organo_machine_interfacing
+			#has_ascension_perk = ap_organo_machine_interfacing_assimilator
+			has_ascension_perk = ap_synthetic_evolution
 			has_ascension_perk = ap_mind_over_matter
+			#has_ascension_perk = ap_synthetic_age
 			has_origin = origin_shroudwalker_apprentice
 			#has_origin = origin_cybernetic_creed
 			has_origin = origin_synthetic_fertility
@@ -535,8 +575,8 @@ ap_mind_over_matter = {
 					AND = {
 						is_cyborg_empire = yes
 						has_origin = origin_cybernetic_creed
-				#		has_origin = origin_unplugged
-				#		NOT = { has_country_flag = is_cyberized }
+						#has_origin = origin_unplugged
+						#NOT = { has_country_flag = is_cyberized }
 					}
 				}
 				is_individual_machine = no
@@ -563,6 +603,10 @@ ap_mind_over_matter = {
 
 	ai_weight = {
 		factor = @ascension_path_base_weight
+		modifier = {
+			factor = @ascension_path_synergy_weight
+			is_spiritualist = yes
+		}
 		modifier = {
 			factor = @ascension_path_synergy_weight
 			OR = {
@@ -610,6 +654,12 @@ ap_synthetic_age = {
 			is_individual_machine = yes
 		}
 		NOR = {
+			has_ascension_perk = ap_engineered_evolution
+			has_ascension_perk = ap_the_flesh_is_weak 
+			has_ascension_perk = ap_organo_machine_interfacing
+			has_ascension_perk = ap_organo_machine_interfacing_assimilator
+			has_ascension_perk = ap_synthetic_evolution
+			#has_ascension_perk = ap_mind_over_matter
 			has_ascension_perk = ap_synthetic_age
 			has_origin = origin_shroudwalker_apprentice
 			has_origin = origin_endbringers

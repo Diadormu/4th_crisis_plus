@@ -92,6 +92,14 @@ action_invite_to_federation = {
 			fail_text = "requires_recipient_not_devouring_swarm"
 			from = { NOT = { has_valid_civic = civic_hive_devouring_swarm } }
 		}
+		custom_tooltip = {
+			fail_text = "requires_actor_not_khan"
+			NOT = { has_country_flag = heir_of_the_khan_khan }
+		}
+		custom_tooltip = {
+			fail_text = "requires_recipient_not_khan"
+			from = { NOT = { has_country_flag = heir_of_the_khan_khan } }
+		}
 
 		# When actor is terminator, requires target machine empire/synth
 		custom_tooltip = {

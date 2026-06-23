@@ -37,6 +37,7 @@ resolution_galacticreforms_nominate_custodian = {
 		set_galactic_custodian = yes
 		hidden_effect = {
 			country_event = { id = custodian.1 }
+			country_event = { id = ambition.340 }
 			if = {
 				limit = { has_global_flag = gdf_active }
 				country_event = { id = custodian.35 days = 10 }
@@ -45,7 +46,13 @@ resolution_galacticreforms_nominate_custodian = {
 	}
 
 	potential = {
-		has_nemesis = yes
+		OR = {
+			has_nemesis = yes
+			AND = {
+				has_nomads_dlc = yes
+				has_ascension_perk = ap_defender_of_the_galaxy_nomads
+			}
+		}
 		is_galactic_council_established = yes
 		has_galactic_custodian = no
 		has_galactic_emperor = no
@@ -61,6 +68,9 @@ resolution_galacticreforms_nominate_custodian = {
 			NOR = {
 				has_ascension_perk = ap_become_the_crisis
 				#has_ascension_perk = ap_cosmogenesis
+				has_ascension_perk = ap_behemoths
+				has_ascension_perk = ap_galactic_hyperthermia
+				#has_country_flag = is_player_crisis # For modded crisis paths
 			}
 		}
 	}
@@ -140,10 +150,7 @@ resolution_galacticreforms_nominate_custodian = {
 
 		modifier = {
 			factor = 0
-			OR = {
-				has_ascension_perk = ap_become_the_crisis
-				has_ascension_perk = ap_cosmogenesis
-			}
+			is_player_crisis = yes
 			desc = gal_com_we_have_crisis_perk
 		}
 

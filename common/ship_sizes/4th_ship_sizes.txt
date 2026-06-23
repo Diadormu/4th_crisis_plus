@@ -19,7 +19,7 @@ constructor = {
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	prerequisites = { "tech_space_construction" }
+	#	prerequisites = { "tech_space_construction" }	# Commented out to hide from the technology card
 	is_civilian = yes
 	is_designable = no
 	components_add_to_cost = no
@@ -32,6 +32,15 @@ constructor = {
 	required_component_set = "civilian_afterburner_components"
 	valid_target_aggressive_stance = no
 	auto_upgrade = yes
+
+	construction_capabilities = {
+		starbase
+		mining_station
+		research_station
+		observation_station
+		automated_construction
+		megastructure
+	}
 
 	resources = {
 		category = ships
@@ -69,6 +78,7 @@ constructor = {
 	}
 
 	potential_country = {
+		is_nomadic = no
 		OR = {
 			has_technology = tech_hyper_drive_1
 			has_technology = tech_hyper_drive_2
@@ -350,6 +360,7 @@ colonizer = {
 	available_to_everyone = yes
 
 	potential_country = {
+		is_nomadic = no
 		is_guided_sapience_empire = no
 		is_wilderness_empire = no
 		OR = {
@@ -414,6 +425,7 @@ sponsored_colonizer = {
 	}
 
 	potential_country = {
+		is_nomadic = no
 		is_guided_sapience_empire = no
 		OR = {
 			has_civic = civic_corporate_dominion
@@ -480,6 +492,7 @@ lithoid_colonizer = {
 	}
 
 	potential_country = {
+		is_nomadic = no
 		has_origin = origin_lithoid
 		is_guided_sapience_empire = no
 		OR = {
