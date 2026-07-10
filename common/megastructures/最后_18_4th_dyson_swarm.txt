@@ -112,17 +112,7 @@ dyson_swarm_1 = {
 
 	possible = {
 		inline_script = megastructures/system_ownership_or_waystation_check
-		custom_tooltip = {
-			fail_text = "requires_surveyed_system"
-			NOT = {
-				any_system_planet = {
-					is_surveyed = {
-						who = prev.from
-						status = no
-					}
-				}
-			}
-		}
+		inline_script = megastructures/system_surveyed_or_waystation_check
 		#custom_tooltip = {
 		#	fail_text = "requires_no_binary_trinary"
 		#	is_binary_star = no
