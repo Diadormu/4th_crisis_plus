@@ -6,6 +6,10 @@ can_explore_rifts_outside_borders = {
 	OR = {
 		is_nomadic = yes
 		has_origin = origin_riftworld
+		AND = {
+			is_ai = no
+			has_tradition = tr_archivism_frontier_archaeology
+		}
 	}
 	OR = {
 		from = { # regular case
@@ -18,6 +22,10 @@ can_explore_rifts_outside_borders = {
 			}
 			is_nomadic = yes
 			has_research_agreement = from.solar_system.owner
+		}
+		AND = {
+			is_ai = no
+			has_tradition = tr_archivism_frontier_archaeology
 		}
 	}
 }
@@ -49,6 +57,10 @@ can_excavate_outside_borders = {
 				solar_system = { exists = owner }
 			}
 			is_nomadic = yes
+			has_tradition = tr_archivism_frontier_archaeology
+		}
+		AND = {
+			is_ai = no
 			has_tradition = tr_archivism_frontier_archaeology
 		}
 	}

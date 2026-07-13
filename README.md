@@ -51,6 +51,8 @@
   allow Wilderness select Mechanical Ships and Cosmogenesis
 - 允许星球塑形师环境改造行星变为火山星球；  
   allow World Shaper terraform a planet into a Volcanic World
+- 允许玩家完成前线考古传统后挖所有的坟和裂缝；  
+  allow Player to explore all borders and rifts after adopted the Tradition Frontier Archaeology
 
 - 添加一个黑洞带碎环遗迹球和裂隙的母星系；  
   add a home system with Ruined Ring World、Relic Planet and Astral Rift arround Black Hole
