@@ -8,7 +8,7 @@ crisis_sphere_ruined = {
 	}
 
 	dismantle_cost = {
-		category = megastructures_hyper_relay
+		category = megastructures
 		cost = {
 			energy = 3000
 		}

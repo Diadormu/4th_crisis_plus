@@ -147,3 +147,35 @@ ring_world_1 = {
 		set_star_flag = ring_world_built
 	}
 }
+
+# Ruined Ring World Segment
+ring_world_ruined = {
+	entity = "ringworld_destroyed_entity"
+	portrait = "GFX_megastructure_construction_background"
+
+	potential = {
+		always = no
+	}
+
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			energy = 2000
+		}
+	}
+	dismantle_time = 720
+	dismantle_potential = { always = yes }
+	dismantle_possible = {
+		can_dismantle_megastructure = {
+			TECH = tech_mega_engineering
+		}
+	}
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				alloys = 2000
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
+	}
+}

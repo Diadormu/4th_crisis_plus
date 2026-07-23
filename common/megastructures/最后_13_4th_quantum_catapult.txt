@@ -55,6 +55,11 @@ quantum_catapult_0 = {
 		#	}
 		#}
 		inline_script = megastructures/system_surveyed_or_waystation_check
+		custom_tooltip = {
+			fail_text = "requires_no_binary_trinary"
+			is_binary_star = no
+			is_trinary_star = no
+		}
 	}
 
 	placement_rules = {
