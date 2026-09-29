@@ -90,8 +90,8 @@ habitat_central_complex = {
 		#		OR = {
 		#			any_system_planet = {
 		#				OR = {
-		#					has_carrier_flag = habitat
-		#					has_carrier_flag = hold_the_line_habitat
+		#					has_planet_flag = habitat
+		#					has_planet_flag = hold_the_line_habitat
 		#				}
 		#			}
 		#			has_megastructure = habitat_central_complex_ruined
@@ -150,8 +150,8 @@ habitat_central_complex = {
 			#	fail_text = "requires_no_existing_megastructure"
 			#	#can_build_megastructure_on_planet = yes
 			#	NOR = {
-			#		has_carrier_flag = megastructure
-			#		has_carrier_flag = has_megastructure
+			#		has_planet_flag = megastructure
+			#		has_planet_flag = has_megastructure
 			#		solar_system = {
 			#			OR = {
 			#				has_star_flag = ring_world_built

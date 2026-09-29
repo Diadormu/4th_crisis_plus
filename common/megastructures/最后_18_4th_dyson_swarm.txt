@@ -81,7 +81,7 @@ dyson_swarm_1 = {
 			limit = {
 				has_modifier = dyson_swarm_1_mod
 			}
-			remove_carrier_flag = has_megastructure
+			remove_planet_flag = has_megastructure
 			remove_modifier = dyson_swarm_1_mod
 		}
 		from = {
@@ -158,8 +158,14 @@ dyson_swarm_1 = {
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
 				NOR = {
-					has_carrier_flag = megastructure
-					has_carrier_flag = has_megastructure
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_stable_star"
+				NOT = {
+					has_planet_flag = red_giant_unstable
 				}
 			}
 			custom_tooltip = {
@@ -183,9 +189,7 @@ dyson_swarm_1 = {
 		}
 	}
 
-	country_modifier = {
-		custom_tooltip = dyson_swarm_1_mod_tooltip
-	}
+	custom_tooltip = dyson_swarm_1_mod_tooltip
 
 	# root = system
 	# from = country
@@ -278,7 +282,7 @@ dyson_swarm_1 = {
 				modifier = dyson_swarm_1_mod
 				days = -1
 			}
-			set_carrier_flag = has_megastructure
+			set_planet_flag = has_megastructure
 			if = {
 				limit = {
 					has_orbital_station = yes

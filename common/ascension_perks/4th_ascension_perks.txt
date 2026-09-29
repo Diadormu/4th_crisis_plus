@@ -11,8 +11,7 @@ ap_cosmogenesis = {
 		has_machine_age_dlc = yes
 		NOR = {
 			is_player_crisis = yes
-			has_ascension_perk = ap_defender_of_the_galaxy
-			has_ascension_perk = ap_defender_of_the_galaxy_nomads
+			has_defender_of_the_galaxy_ap = yes
 			has_origin = origin_slavers # No crisis for MSI
 			has_origin = origin_endbringers # No additional crisis for Endbringers
 		}
@@ -36,7 +35,6 @@ ap_cosmogenesis = {
 			fail_text = "must_not_be_emperor"
 			is_galactic_emperor = no
 		}
-		is_nomadic = no
 	}
 
 	on_enabled = {
@@ -65,7 +63,7 @@ ap_cosmogenesis = {
 		modifier = {
 			factor = 5
 			any_playable_country = {
-				has_ascension_perk = ap_defender_of_the_galaxy
+				has_defender_of_the_galaxy_ap = yes
 			}
 			NOT = {
 				any_playable_country = {
@@ -159,7 +157,7 @@ ap_world_shaper = {
 			OR = {
 				is_void_dweller_empire = yes
 				has_origin = origin_shattered_ring
-				has_trait = trait_aquatic
+				has_aquatic_trait = yes
 				has_ethic = ethic_gestalt_consciousness
 			}
 		}

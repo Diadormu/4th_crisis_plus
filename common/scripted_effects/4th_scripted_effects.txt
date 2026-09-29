@@ -32,9 +32,23 @@ update_leader_after_modification = {
 				if = {
 					limit = { has_trait = trait_cybernetic }
 					prev = {
-						add_trait = {
-							trait = leader_trait_cyborg
-							show_message = no
+						if = {
+							limit = {
+								is_spiritualist = yes
+								owner = {
+									has_policy_flag = cyberization_standards_limited
+								}
+							}
+							add_trait = {
+								trait = leader_trait_limited_cyborg
+								show_message = no
+							}
+						}
+						else = {
+							add_trait = {
+								trait = leader_trait_cyborg
+								show_message = no
+							}
 						}
 						if = {
 							limit = {
@@ -46,15 +60,6 @@ update_leader_after_modification = {
 								trait = leader_trait_firewalled
 								show_message = no
 							}
-						}
-					}
-				}
-				if = {
-					limit = { has_trait = trait_limited_cybernetic }
-					prev = {
-						add_trait = {
-							trait = leader_trait_limited_cyborg
-							show_message = no
 						}
 					}
 				}
