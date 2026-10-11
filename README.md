@@ -27,6 +27,8 @@
   ~~add fortified colossus and juggernaut tech, after finished will unlock fortified new ship sections~~
 - 巨像和主宰上限提升至2，每1000海军容量增加1；  
   colossus and juggernaut ships limit raised to 2, every 1000 Naval Capacity increases 1
+- 指挥上限提升至2000，最大海军容量提示至20000；  
+  COMMAND_LIMIT_MAX raised to 2000, NAVAL_CAPACITY_MAX raised to 20000
 - ~~允许设计工程船、殖民船、科研船、运输舰；~~  
   ~~allow design Construction Ships、Colonizer Ships、Science Ships、Transport Ships~~
 - 为民用船添加一个加力燃烧室模块  
